@@ -166,3 +166,9 @@ font-weight: 600;
     font-size: 2.2rem;
     background: white;
 }
+.book_services_btn{
+    background: #ea088b;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: whitesmoke;
+}
