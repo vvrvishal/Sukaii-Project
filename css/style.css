@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* *{
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Lato', sans-serif;
+
+} */
+    ul{
+    list-style: none;
+}
+.menu_list{
+    padding: 0rem 1rem;
+    font-weight: 500;
+    color: rgb(90, 89, 89);
+}
+.login_row_list{
+    padding: 0rem 1rem;
+    color: gray;
+}
+.nurses_image{
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+    top: 37%;
+    left: 8%;
+    color: whitesmoke;
+}
+.nurses_image span h1{
+    font-size: 5rem;
+    line-height: .8;
+}
+.weare_text_details{
+    font-family: 'Lato', sans-serif;
+
+}
+.thb_text {
+    width: 35%;
+    font-size: 1.5rem;
+    font-size: 21px;
+    color: #ec098d;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.thb_300{
+    font-size: 3.5rem;
+    border: 1px solid;
+    padding: 0.2rem 0.5rem;
+    background: #06b5b9;
+    color: whitesmoke;
+    border-radius: 11px;
+    font-family: 'Rubik', sans-serif;
+}
+.freecall_div{
+    border: 1.5px solid black;
+    padding: .5rem;
+    width: 87% !important;
+    margin: auto;
+    border-radius: 1rem;
+    position: relative;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+#freecall_name input[placeholder="NAME"]{
+    padding-left: 1.5rem;
+}
+#freecall_name, #freecall_location{ 
+    padding-left: 16px;
+font-size: 15px;
+font-weight: 600;
+}
+#freecall_location select{
+
+    -webkit-appearance: none;
+        width: 500px;
+}
+.freecall_name_icon {
+    border: 1.5px solid black;
+    padding: 0.5rem;
+    border-radius: 50px;
+    position: absolute;
+    top: 16%;
+    left: -4%;
+    background: white;
+    color: #06b5b9;
+}
+.selctor_dow_arrow{
+    position: relative;
+    font-size: larger;
+    right: -36%;
+}
+.call_btn{
+    border-radius: 18px;
+    background: #ec098d;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+}
+.book_now {
+    width: 32%;
+    margin: auto;
+    border-radius: 13px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    top: -14%;
+    left: 35%;
+}
+.we_made_it {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    left: 42%;
+    top: -31%;
+    font-weight: 600;
+}
+.three_easy_steps{
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+.booknow_text{
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    line-height: 1.1;
+    color: #06b5b9;
+    font-weight: 500;
+}
+.justin {
+    font-size: 1.6rem;
+    padding-left: 5.5rem;
+}
+.three {
+    font-size: 5.5rem;
+    line-height: .9;
+    position: absolute;
+    top: 0%;
+    right: 28%;
+    color: #ec098d;
+}
+.easy_steps {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 36%;
+    line-height: 1;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    color: #ec098d;
+}
+.book_3_eassy_step{
+    background-image: url("../book_now_in_3_step_bg_image.svg");
+    position:relative;
+}
+.f_way, .s_way, .t_way{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+.f_way_icon, .s_way_icon, .t_way_icon{
+    color: #ec098d;
+    border: 1px solid black;
+    padding: 0.7rem 1.3rem;
+    border-radius: 66px;
+    font-size: 2.2rem;
+    background: white;
+}
