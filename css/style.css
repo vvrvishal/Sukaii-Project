@@ -5,9 +5,12 @@
     font-family: 'Lato', sans-serif;
 
 } */
-    ul{
+    ul .login_row_list, .menu_list{
     list-style: none;
 }
+/* *{
+    border: 1px solid red;
+} */
 .menu_list{
     padding: 0rem 1rem;
     font-weight: 500;
@@ -34,7 +37,8 @@
 
 }
 .thb_text {
-    width: 35%;
+    width: 160px;
+    padding-left: 2rem;
     font-size: 1.5rem;
     font-size: 21px;
     color: #ec098d;
@@ -81,36 +85,40 @@ font-weight: 600;
     border-radius: 50px;
     position: absolute;
     top: 16%;
-    left: -4%;
+    left: -3%;
     background: white;
     color: #06b5b9;
 }
 .selctor_dow_arrow{
     position: relative;
     font-size: larger;
-    right: -36%;
+    right: -44%;
 }
 .call_btn{
+    cursor: pointer;
     border-radius: 18px;
     background: #ec098d;
     color: whitesmoke;
     font-family: 'Rubik', sans-serif;
 }
 .book_now {
+    min-width: 404px;
+    max-width: 405px;
     width: 32%;
     margin: auto;
     border-radius: 13px;
     padding: 0.5rem 1rem;
     position: absolute;
     font-family: 'Rubik', sans-serif;
-    top: -14%;
-    left: 35%;
+    top: -10%;
+    left: 38%;
 }
 .we_made_it {
+    word-spacing: 3px;
     font-family: 'Lato', sans-serif;
     position: absolute;
     left: 42%;
-    top: -31%;
+    top: -21%;
     font-weight: 600;
 }
 .three_easy_steps{
@@ -123,6 +131,8 @@ font-weight: 600;
     display: flex;
     flex-direction: column;
     width: 62%;
+    min-width: 227;
+    max-width: 227;
     line-height: 1.1;
     color: #06b5b9;
     font-weight: 500;
@@ -150,10 +160,15 @@ font-weight: 600;
     color: #ec098d;
 }
 .book_3_eassy_step{
+    background-size: cover;
     background-image: url("../book_now_in_3_step_bg_image.svg");
     position:relative;
+    background-repeat: no-repeat;
+    height: 330px;
+    margin-bottom: 4rem;
 }
 .f_way, .s_way, .t_way{
+    list-style: none;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
@@ -171,4 +186,103 @@ font-weight: 600;
     font-size: 1.3rem;
     font-weight: 600;
     color: whitesmoke;
+    border-radius: 10px;
+}
+.Nurse_at_home_text, .ELDERLY_CAREGIVERS_text, .LAB_TEST_AT_HOME_text{
+    width: 35%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: darkgray;
+    color: #585555;
+}
+.ELDERLY_CAREGIVERS_text{
+    width: 47%;
+}
+.f_s_c_heading, .f_d_c_heading, .f_sp_c_heading{
+    font-family: 'Rubik', sans-serif;
+}
+.f_s_c_detail, .f_d_c_detail, .f_sp_c_detail{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    width: 82%;
+    margin: auto;
+    text-align: justify;
+    color: gray;
+}
+.why_us, .we_are_commited_to{
+    font-size: 3rem;
+    /* width: 100vw; */
+    color: #ea088b;
+    font-family: 'Rubik', sans-serif;
+}
+.s_a_h {
+    border: 2px solid;
+    text-align: center;
+    border-radius: 30px;
+    position: relative;
+    width: 95%;
+    left: 5%;
+}
+.s_a_h h3, .footer h5{
+    font-family: 'Rubik', sans-serif;
+}
+.s_a_h_img img{
+    position: absolute;
+    top: -19%;
+    right: 39%;
+    width: 128px;
+}
+.s_a_h_detail{
+    font-family: 'Lato', sans-serif;
+    width: 94%;
+    margin: auto;
+    padding-bottom: 3rem;
+    text-align: justify;
+}
+.about_us_footer{
+    color: whitesmoke;
+    text-align: justify;
+}
+.footer h5{
+    /* background-color: #efefef; */
+    padding-top: 1.5rem;
+    color: #585555;
+}
+.our_services_list, .quik_link_list{
+    color: #ea088b;
+}
+.our_services_list span, .quik_link_list span, .connect_us_add, .connect_us_email, .connect_us_call{
+    color: whitesmoke;
+}
+.copy_write{
+    width: 100%;
+    font-weight: 600;
+    color: #56524c;
+}
+.bnp{
+    background: #e90c8c;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.mobole_no{
+    display: flex;
+    /* width: 20%; */
+    align-items: center;
+    font-size: 25px;
+}
+.book_with_mob {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem;
+    background: #00b4b8;
+}
+/* *{
+    border: 1px solid red;
+} */
+@media(max-width:450){
+    .book_now {
+        left: 0% !important;
+    }
 }
