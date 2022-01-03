@@ -15,21 +15,18 @@
 </style>
 <body>
     <div class="align-items-center border-bottom row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col col-md-3 col-sm-6">
             <img src="./images/sukaii_transparent_logo.png" alt="Sukaii" width="50%" class="p-2"> 
         </div>
-        <div class="col-md-1 d-none d-md-block"></div>
-        <div class="col-md-8  hide_menu">
-            <div class="justify-content-end login_row row w-100">
-                <ul class="d-flex mb-2 list-unstyled">
+        <div class="col-6 col-md-9 col-sm-6 hide_menu">
+            <div class="d-md-block d-none justify-content-end login_row row w-100">
+                <ul class="d-flex float-right list-unstyled mb-2">
                     <li class="login_row_list px-3">Login/Sign up</li>
                     <li class="login_row_list px-3"><span class="p-2"><i class="fas fa-map-marker-alt"></i></span>Bangkok</li>
                 </ul>
-                
-                <span></span>
             </div>
-            <div class="row justify-content-end row">
-                <ul class="d-flex mb-0">
+            <div class="d-md-block d-none float-right row w-100">
+                <ul class="d-flex float-right mb-0">
                     <li class="menu_list px-3">HOME</li>
                     <li class="menu_list  px-3">SERVICES</li>
                     <li class="menu_list px-3">FAQ</li>
@@ -37,11 +34,20 @@
                     <li class="menu_list px-3">ABOUT US</li>
                 </ul>
             </div>
-            <div class="mobile_menu">
-                <ul>
-                    <li class="tab_icon_menu_list list-unstyled"><span><i class="fas fa-bars d-block d-md-none"></i></span></li>
+            <div class="align-items-center d-flex justify-content-end mobile_menu">
+                <ul class="d-block d-md-none m-0"  onclick="open_menu()">
+                    <li class="tab_icon_menu_list list-unstyled" style="font-size: 20px;"><span><i class="fas fa-bars "></i></span></li>
                 </ul>
             </div>
+        </div>
+        <div class="tab_mobile_nav  w-50" id="mobile_menu_btn" style="display: none;">
+            <ul class="list-unstyled form-control">
+                <li class="border-0 form-control">HOME</li>
+                <li class="border-0 form-control">SERVICES</li>
+                <li class="border-0 form-control">FAQ</li>
+                <li class="border-0 form-control">PARTNERS</li>
+                <li class="border-0 form-control">ABOUT US</li>
+            </ul>
         </div>
     </div>
     <div class="row mb-5">
@@ -424,6 +430,54 @@
 
         </div>
     
-    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 </body>
+<script>
+    var toggle_menu_btn = document.getElementById('mobile_menu_btn');
+    function open_menu(){
+        console.log(1);
+        if(toggle_menu_btn.style.display == 'none' || toggle_menu_btn.style.display == ""){
+            toggle_menu_btn.style.display = "block";
+            console.log(2);
+        }else{
+            toggle_menu_btn.style.display = "none";
+            console.log(3);
+        }
+    };
+</script>
 </html>

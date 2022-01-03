@@ -26,6 +26,20 @@
     font-weight: 500;
     color: rgb(90, 89, 89);
 }
+.tab_mobile_nav{
+    font-weight: 600;
+    cursor: pointer;
+}
+.tab_mobile_nav {
+    position: absolute;
+    z-index: 100;
+    top: 9%;
+    right: 0%;
+}
+.tab_mobile_nav li:hover{
+    background-color: #06b5b93b;
+  }
+
 .login_row_list{
     /* padding: 0rem 1rem; */
     color: gray;
@@ -345,13 +359,9 @@ input#freecall_name:focus {
 /* *{
     border: 1px solid red;
 } */
-@media only screen and (max-width:768px){
-    hide_menu{
-        display: none;
-    }
-}
+
 @media only screen and (max-width: 450px) {
-    .hide_menu, .we_are_doctor_image, .we_are_for_labtop, .thb300_fpr_laptop
+     .we_are_doctor_image, .we_are_for_labtop, .thb300_fpr_laptop
     , .we_are_div_laptop{
         display: none !important;
     }.thb300 {
