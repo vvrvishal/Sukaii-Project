@@ -20,23 +20,23 @@
                 <img src="./images/sukaii_transparent_logo.png" alt="Sukaii" width="50%" class="p-2"> 
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-8">
+            <div class="col-md-8 hide_menu">
                 <div class="justify-content-end login_row row w-100">
-                    <ul class="d-flex mb-2">
-                        <li class="login_row_list">Login/Sign up</li>
-                        <li class="login_row_list"><span class="p-2"><i class="fas fa-map-marker-alt"></i></span>Bangkok</li>
+                    <ul class="d-flex mb-2 list-unstyled">
+                        <li class="login_row_list px-3">Login/Sign up</li>
+                        <li class="login_row_list px-3"><span class="p-2"><i class="fas fa-map-marker-alt"></i></span>Bangkok</li>
                     </ul>
                     
                     <span></span>
                 </div>
                 <div class="row justify-content-end row">
-                    <ul class="d-flex mb-0">
-                        <li class="menu_list">HOME</li>
-                        <li class="menu_list">WE ARE</li>
-                        <li class="menu_list">SERVICES</li>
-                        <li class="menu_list">CORPORATE</li>
-                        <li class="menu_list">FAQ</li>
-                        <li class="menu_list">PARTNERS</li>
+                    <ul class="d-flex mb-0 list-unstyled">
+                        <li class="menu_list px-3">HOME</li>
+                        <li class="menu_list px-3">WE ARE</li>
+                        <li class="menu_list px-3">SERVICES</li>
+                        <li class="menu_list px-3">CORPORATE</li>
+                        <li class="menu_list px-3">FAQ</li>
+                        <li class="menu_list px-3">PARTNERS</li>
                     </ul>
                 </div>
             </div>
@@ -44,22 +44,48 @@
         <div class="row mb-5">
             <div class="col-md-4 px-0">
                 <img src="./images/image.svg" alt="" class="w-100" style="margin-top: -4px;">
-                <h3 class="nurses_image mb-0">Get trained <span><h1 class="mb-0">Nurses</h1></span>@Home</h3>
+                <h3 class="nurses_image mb-0 position-absolute text-light">Get trained <span><h1 class="mb-0">Nurses</h1></span>@Home</h3>
             </div>
             <div class="col-md-8 px-0">
                 <img src="./images/image-1.PNG" class="w-100" style="height: 100.3%;" alt="">
             </div>
         </div>
         <div class="row" style="margin-bottom: 7rem;">
-            <div class="col-md-4 text-center">
-                <img src="./images/doctors_image-1.PNG" alt="" style="border-radius: 25px;">
+            <div class="row thb300 d-none d-sm-block" style="margin: auto; width: 70%;">
+                <h4 class="thb_text">FULL BODY CHECK UP ONLY AT</h4>
+                <h1 class="thb_300">THB300</h1>
             </div>
-            <div class="col-md-4">
-                <h2 class="weare ">WE ARE</h2>
+            <div class="row pl-4">
+                <div class="freecall_div border-dark p-2 form-control">
+                    <span><i class="fas fa-user freecall_name_icon"></i></span>
+                    <input type="text" name="Name" class="border-0" placeholder="NAME" id="freecall_name">
+                 </div>
+                 <div class="freecall_div border-dark p-2 form-control">
+                     <span><i class="fas fa-map-marker-alt freecall_name_icon"></i></span>
+                     <!-- <select name="freecall_location" id="freecall_location" aria-placeholder="LOCATION" class="border-0">
+                         <option value="yxz" class="form-control">xyz</option>
+                     </select> -->
+                     <input type="text" name="Name" class="border-0" placeholder="LOCATION" id="freecall_name">
+                     <span><i class="fas fa-caret-down selctor_dow_arrow"></i></span>
+                  </div>
+                  <div class="freecall_div border-dark p-2 form-control">
+                     <span><i class="fas fa-heartbeat freecall_name_icon"></i></span>
+                     <input type="text" name="Name" class="border-0" placeholder="SELECT SERVICE" id="freecall_name">
+                     <span><i class="fas fa-caret-down selctor_dow_arrow"></i></span>
+                  </div>
+                  <div class="border call_btn     m-auto px-3 py-2">
+                      <h3 class="mb-0">GET FREE CALL NOW</h3>
+                  </div>
+             </div>
+            <div class="col-md-4 text-center">
+                <img src="./images/doctors_image-1.PNG" alt="" style="border-radius: 25px;" class="we_are_doctor_image">
+            </div>
+            <div class="col-md-4 we_are_div_laptop"> 
+                <h2 class="weare we_are_for_labtop">WE ARE</h2>
                 <p class="text-justify weare_text_details text-dark">Lorem ipsum dolor  eos doloremque minus officia modi repudiandae quam? Perspiciatis iusto modi eaque nihil illum voluptates dignissimos ipsa, obcaecati accusantium quam explicabo veniam, ab amet eius officiis recusandae quidem quos ducimus atque tempora voluptatibus maiores maxime asperiores molestias? Quasi!</p>
                 <p class="text-justify text-dark">Lorem ipsum dolor,ut molestias illum architecto quae numquam, nobis ut suur adipisicing elit. Quod, quibusdam? Aut molestias illum architecto quae numquam, nobis ut sunt necessitatibus. <b>Read more...</b></p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 thb300_fpr_laptop">
                 <div class="row thb300" style="margin: auto; width: 70%;">
                     <h4 class="thb_text">FULL BODY CHECK UP ONLY AT</h4>
                     <h1 class="thb_300">THB300</h1>
@@ -85,7 +111,6 @@
                      <div class="border call_btn     m-auto px-3 py-2">
                          <h3 class="mb-0">GET FREE CALL NOW</h3>
                      </div>
-                     <!-- <i class="fas fa-heartbeat"></i> -->
                 </div>
             </div>
         </div>
@@ -105,23 +130,28 @@
              </div>
         </div>
         <div class="row" style="    margin-bottom: 4rem;">
-            <div class="col-md-4 col-sm-12" style="border-right: 2px solid #898686;">
-                <div class="text-center mb-5 nearse_image"><img src="./images/nurse-at-home(2).png" alt=""></div>
-                <h2 class="Nurse_at_home_text text-center" style="min-width: 145px; max-width: 145px;">NURSE AT HOME</h2>
+            <div class="col-md-4 col-sm-12 nurse-at-home_div" style="border-right: 2px solid #898686;">
+                <div class=" nearse_image"><img src="./images/nurse-at-home(2).png" alt=""></div>
+                <div class="" style="width: 60%;">
+                    <h2 class="Nurse_at_home_text text-center" style="min-width: 145px;">NURSE AT HOME</h2>
                 <div class="book_btn text-center"><button type="button" class="btn book_services_btn text-light">BOOK</button></div>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-12" style="border-right: 2px solid #898686;">
-                <div class="text-center mb-5 olders_image"><img src="./images/ealdrly_img(2).png" alt=""></div>
-                <h2 class="ELDERLY_CAREGIVERS_text text-center">ELDERLY CAREGIVERS</h2>
-                <div class="book_btn text-center mb-4"><button type="button" class="btn book_services_btn text-light">BOOK</button></div>
+            <div class="col-md-4 col-sm-12 olders_image_div" style="border-right: 2px solid #898686;">
+                <div class="olders_image"><img src="./images/ealdrly_img(2).png" alt=""></div>
+                <div class="" style="width: 61%;">
+                    <h2 class="ELDERLY_CAREGIVERS_text text-center">ELDERLY CAREGIVERS</h2>
+                    <div class="book_btn text-center mb-4"><button type="button" class="btn book_services_btn text-light">BOOK</button></div></div>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="text-center lab_img mb-5"><img src="./images/lab-test(2).png" alt=""></div>
-                <h2 class="LAB_TEST_AT_HOME_text text-center" style="min-width: 167px; max-width: 167px;">LAB TEST AT HOME</h2>
+            <div class="col-md-4 col-sm-12 lab_test_div">
+                <div class="text-center lab_img lab_test"><img src="./images/lab-test(2).png" alt=""></div>
+                <div class="" style="width: 60%;">
+                    <h2 class="LAB_TEST_AT_HOME_text text-center" style="min-width: 167px;">LAB TEST AT HOME</h2>
                 <div class="book_btn text-center"><button type="button" class="btn book_services_btn text-light">BOOK</button></div>
+                </div>
             </div>
         </div>
-        <div class="row" style="background: #efefef;">
+        <div class="row why_us_desktop" style="background: #efefef;">
             <div class="pt-4 pb-3 w-100 col-sm-12"><h1 class="text-center why_us w-100">WHY US</h1></div>
             <div class="row">
                 <div class="col-md-4">
@@ -147,7 +177,150 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-bottom: 5rem;" >
+        <div class="row mb-3" style="display: none;">
+            <div class="pt-4 pb-3 w-100"><h1 class="text-center we_are_commited_to">WE ARE COMMITED TO</h1></div>
+            <div class="row ">
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/service_at_home.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/ontime_service.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/patient_center.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/fast_and_accurate.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/nurse_and_tecnitian.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/safe_and_secured.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/offer_and_more.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 service_at_home_div d-flex align-items-center">
+                    <div class="service_at_home_img"><img src="./images/easy_to_use.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h"  style=" margin-top: 3rem;">
+                        <div class="s_a_h_img"><img src="./images/ontime_service.PNG" alt=""></div>
+                        <h3 style="padding-top: 6rem;">ON TIME SERVICE</h3>
+                        <p class="s_a_h_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h" style=" margin-top: 3rem;">
+                        <div class="s_a_h_img"><img src="./images/patient_center.PNG" alt=""></div>
+                        <h3 style="padding-top: 6rem;">PATIENT CENTRIC</h3>
+                        <p class="s_a_h_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h"  style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/fast_and_accurate.PNG" alt=""></div>
+                        <h3 style="padding-top: 6rem;">FAST & ACCURATE</h3>
+                        <p class="s_a_h_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div> -->
+                <!-- </div> -->
+                <!-- <div class="col-md-4">
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/nurse_and_tecnitian.PNG" alt="" style="top: -17.5%;"></div>
+                        <h3 style=" padding-top: 6rem;">CERTIFICED NURSE & TECHNICIANS</h3>
+                        <p class="s_a_h_detail" style="padding-bottom:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4" >
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/safe_and_secured.PNG" alt=""></div>
+                        <h3 style="padding-top: 6rem;">SAFE AND SECURED </h3>
+                        <p class="s_a_h_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4">
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/offer_and_more.PNG" alt=""></div>
+                        <h3 style="padding-top: 6rem;">OFFER & MORE</h3>
+                        <p class="s_a_h_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-4">
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="" alt=""></div>
+                        <h3 style="padding-top: 6rem;">EASY TO USE</h3>
+                        <p class="s_a_h_detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus quis dolores veniam quidem voluptatem animi natus magni aliquam itaque perspiciatis at earum debitis hic voluptatibus veritatis, aspernatur optio! Vel?</p>
+                    </div>
+                </div> -->
+            </div> 
+        </div>
+        <div class="row " style="background: #efefef;">
+            <div class="pt-4 pb-3 w-100 col-sm-12"><h1 class="text-center why_us w-100">WHY US</h1></div>
+            <div class="row">
+                <div class="col-sm-12 free_sample_collection_div d-flex align-items-center">
+                    <div class="free"><img src="./images/free_sample_collection.PNG" alt="" class="w-100"></div>
+                    <div class="text-justify w-75 px-2">
+                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                        <p>Lorem ipsum dolor. Rem nam voluptatibus facilis repellat iusto mollitia corporis assumenda laborum sequi deserunt ducimus, accusamus unde modi quaerat deleniti qui possimus natus ullam.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                   <div class="f_s_c text-center pb-4"> <img src="./images/free_sample_collection.PNG" alt="" style="border-radius: 32px;"></div>
+                   <div class="f_s_c_heading pb-2"><h3 class="text-center mb-0">FREE <div class="">Sample collection</div></h3></div>
+                   <div class="f_s_c_detail">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi ipsam voluptas facilis suscipit dolor repudiandae illo reiciendis tenetur consequuntur.</p>
+                   </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="f_d_c pb-4"><img src="./images/free_doctor_cunsultant.PNG" alt="" style="border-radius: 32px;"></div>
+                    <div class="f_d_c_heading pb-2"><h3 class="text-center mb-0">FREE <div class="">Doctor Consultation</div></h3></div>
+                    <div class="f_d_c_detail">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi ipsam voluptas facilis suscipit dolor repudiandae illo reiciendis tenetur consequuntur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                   <div class="f_sp_c pb-4"> <img src="./images/free_smart_result.PNG" alt="" style="border-radius: 32px;"></div>
+                   <div class="f_sp_c_heading pb-2"><h3 class="text-center mn-0">FREE <div>Smart Reports Management</div></h3></div>
+                   <div class="f_sp_c_detail">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi ipsam voluptas facilis suscipit dolor repudiandae illo reiciendis tenetur consequuntur.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row recommeded_to_desktop" style="margin-bottom: 5rem;" >
             <div class="pt-4 pb-3 w-100"><h1 class="text-center we_are_commited_to">WE ARE COMMITED TO</h1></div>
             <div class="row ">
                 <div class="col-md-4 col-sm-12">
