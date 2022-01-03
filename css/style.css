@@ -1,32 +1,38 @@
-
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: none;
+    box-shadow:none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* *{
     font-family: 'Rubik', sans-serif;
     font-family: 'Lato', sans-serif;
 
 } */
-    ul .login_row_list, .menu_list{
-    list-style: none;
-}
+    /* ul .login_row_list, .menu_list{
+    /* list-style: none; */
+
 /* *{
     border: 1px solid red;
 } */
 .menu_list{
-    padding: 0rem 1rem;
+    /* padding: 0rem 1rem; */
     font-weight: 500;
     color: rgb(90, 89, 89);
 }
 .login_row_list{
-    padding: 0rem 1rem;
+    /* padding: 0rem 1rem; */
     color: gray;
 }
 .nurses_image{
-    position: absolute;
+    /* position: absolute; */
     font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
     top: 37%;
     left: 8%;
-    color: whitesmoke;
+    /* color: whitesmoke; */
 }
 .nurses_image span h1{
     font-size: 5rem;
@@ -196,6 +202,9 @@ font-weight: 600;
     color: darkgray;
     color: #585555;
 }
+.Nurse_at_home_text{
+    max-width: 145px;
+}
 .ELDERLY_CAREGIVERS_text{
     width: 47%;
 }
@@ -278,11 +287,145 @@ font-weight: 600;
     padding: 2rem 0rem;
     background: #00b4b8;
 }
+.nearse_image{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.olders_image{
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.lab_test{
+    margin-bottom: 3rem;
+}
+.LAB_TEST_AT_HOME_text{
+    max-width: 176px;
+}
+/* .service_at_home_div{
+    dis
+} */
+.service_at_home_img {
+    width: 30%;
+    text-align: center;
+}
+.saht{
+    border-bottom: 2px solid #00b4b8;
+    padding-bottom: 0.15rem;
+}
 /* *{
     border: 1px solid red;
 } */
-@media(max-width:450){
-    .book_now {
-        left: 0% !important;
+@media only screen and (max-width: 450px) {
+    .hide_menu{
+        display: none !important;
+    }.thb300 {
+        width: 100% !important;
     }
-}
+    .book_now{
+        left: 6% !important;
+        min-width: 346px;
+        max-width: 346px;
+    }
+    .selctor_dow_arrow {
+        right: -37%;
+    }
+    .we_are_doctor_image{
+        display: none !important;
+    }
+    .we_are_for_labtop{
+        display: none;
+    }
+    .thb300_fpr_laptop{
+        display: none;
+    }
+    .we_are_div_laptop{
+        display: none;
+    }
+    .we_made_it {
+        left: 21%;
+        top: -22%;
+    }
+    .booknow_text{
+        font-size: 2.1rem;
+    }
+    .three{
+        font-size: 5rem;
+        right: 27%;
+    }
+    .easy_steps{
+        right: 3%;
+        top: 27%;
+    }
+    .justin{
+        padding-left: 4rem;
+    }
+    .nearse_image{
+        text-align: unset;
+        width: 41%;
+        margin-bottom: 0rem;
+    }
+    .nearse_image img{
+        width: 100%;
+    }
+    .nurse-at-home_div{
+        display: flex;
+        align-items: center;
+    }
+    .Nurse_at_home_text{
+        width: 100%;
+        font-size: 1.5rem;
+        max-width: unset;
+    }
+    .olders_image{
+        text-align: unset;
+        width: 40%;
+        margin-bottom: 0rem;
+    }
+    .olders_image img{
+        width: 100%;
+    }
+    .ELDERLY_CAREGIVERS_text {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .olders_image_div{
+        display: flex;
+        align-items: center;
+    }
+    .lab_test{
+        text-align: unset;
+        width: 40%;
+        margin-bottom: 0rem;
+    }
+    .lab_test img{
+        width: 100%;
+    }
+    .lab_test_div{
+        display: flex;
+        align-items: center;
+    }
+    .LAB_TEST_AT_HOME_text{
+        max-width: unset;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .lab_test_div{
+        display: flex;
+        align-items: center;
+    }
+    .book_3_eassy_step {
+        margin-bottom: 2rem;
+    }
+    .why_us_desktop{
+        display: none;
+    }
+    .we_are_commited_to {
+        font-size: 2rem;
+    }
+    .recommeded_to_desktop{
+        display: none;
+    }
+    .why_us{
+        font-size: 2rem;
+    }
+  }
