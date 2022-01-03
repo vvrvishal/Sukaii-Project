@@ -6,17 +6,21 @@
     box-shadow:none;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* *{
+/* {
     font-family: 'Rubik', sans-serif;
     font-family: 'Lato', sans-serif;
 
 } */
-    /* ul .login_row_list, .menu_list{
-    /* list-style: none; */
+     ul .login_row_list, .menu_list{
+    list-style: none;
+     }
 
-/* *{
+ /* *{
     border: 1px solid red;
 } */
+.row{
+    margin-left: 0px; margin-right: 0px;
+}
 .menu_list{
     /* padding: 0rem 1rem; */
     font-weight: 500;
@@ -43,8 +47,9 @@
 
 }
 .thb_text {
-    width: 160px;
-    padding-left: 2rem;
+    width: 39%;
+    /* border: 1px solid; */
+    /* padding-left: 2rem; */
     font-size: 1.5rem;
     font-size: 21px;
     color: #ec098d;
@@ -53,19 +58,38 @@
     word-spacing: 2px;
     letter-spacing: 1px;
 }
-.thb_300{
-    font-size: 3.5rem;
-    border: 1px solid;
-    padding: 0.2rem 0.5rem;
+.thb_300 {
+    font-size: 3.2rem;
+    padding: 0.42rem 0.5rem;
     background: #06b5b9;
     color: whitesmoke;
     border-radius: 11px;
     font-family: 'Rubik', sans-serif;
+    position: relative;
+    right: -3%;
+    /* line-height: 1; */
+    /* margin-bottom: unset; */
+    width: 61%;
+}
+.thb_300:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 99%;
+    top: 0%;
+    right: 16%;
+    z-index: -1;
+    background: #06b5b9;
+    transform-origin: bottom left;
+    transform: skew(-20deg,0deg);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
 }
 .freecall_div{
     border: 1.5px solid black;
     padding: .5rem;
-    width: 87% !important;
+    width: 100% !important;
     margin: auto;
     border-radius: 1rem;
     position: relative;
@@ -91,14 +115,15 @@ font-weight: 600;
     border-radius: 50px;
     position: absolute;
     top: 16%;
-    left: -3%;
+    left: -5%;
     background: white;
     color: #06b5b9;
 }
-.selctor_dow_arrow{
-    position: relative;
+.selctor_dow_arrow {
+    position: absolute;
     font-size: larger;
-    right: -44%;
+    right: 4%;
+    top: 31%;
 }
 .call_btn{
     cursor: pointer;
@@ -195,7 +220,7 @@ font-weight: 600;
     border-radius: 10px;
 }
 .Nurse_at_home_text, .ELDERLY_CAREGIVERS_text, .LAB_TEST_AT_HOME_text{
-    width: 35%;
+    /* width: 35%; */
     margin: auto;
     margin-bottom: 0.5rem;
     font-size: 2rem;
@@ -203,10 +228,10 @@ font-weight: 600;
     color: #585555;
 }
 .Nurse_at_home_text{
-    max-width: 145px;
+    /* max-width: 145px; */
 }
 .ELDERLY_CAREGIVERS_text{
-    width: 47%;
+    width: 100%;
 }
 .f_s_c_heading, .f_d_c_heading, .f_sp_c_heading{
     font-family: 'Rubik', sans-serif;
@@ -236,17 +261,18 @@ font-weight: 600;
 .s_a_h h3, .footer h5{
     font-family: 'Rubik', sans-serif;
 }
-.s_a_h_img img{
+.s_a_h_img img {
     position: absolute;
-    top: -19%;
-    right: 39%;
+    top: -32%;
+    right: 29%;
     width: 128px;
 }
 .s_a_h_detail{
     font-family: 'Lato', sans-serif;
     width: 94%;
+    min-height: 89px;
     margin: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     text-align: justify;
 }
 .about_us_footer{
@@ -298,9 +324,9 @@ font-weight: 600;
 .lab_test{
     margin-bottom: 3rem;
 }
-.LAB_TEST_AT_HOME_text{
+/* .LAB_TEST_AT_HOME_text{
     max-width: 176px;
-}
+} */
 /* .service_at_home_div{
     dis
 } */
@@ -312,11 +338,21 @@ font-weight: 600;
     border-bottom: 2px solid #00b4b8;
     padding-bottom: 0.15rem;
 }
+input#freecall_name:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 /* *{
     border: 1px solid red;
 } */
+@media only screen and (max-width:768px){
+    hide_menu{
+        display: none;
+    }
+}
 @media only screen and (max-width: 450px) {
-    .hide_menu{
+    .hide_menu, .we_are_doctor_image, .we_are_for_labtop, .thb300_fpr_laptop
+    , .we_are_div_laptop{
         display: none !important;
     }.thb300 {
         width: 100% !important;
@@ -329,18 +365,18 @@ font-weight: 600;
     .selctor_dow_arrow {
         right: -37%;
     }
-    .we_are_doctor_image{
+    /* {
         display: none !important;
-    }
-    .we_are_for_labtop{
+    } */
+    /* .we_are_for_labtop{
         display: none;
-    }
-    .thb300_fpr_laptop{
+    } */
+    /* .thb300_fpr_laptop{
         display: none;
-    }
-    .we_are_div_laptop{
+    } */
+    /* .we_are_div_laptop{
         display: none;
-    }
+    } */
     .we_made_it {
         left: 21%;
         top: -22%;
