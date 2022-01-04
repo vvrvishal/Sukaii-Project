@@ -332,6 +332,11 @@ input#freecall_name:focus {
         font-size: 17px;
     }
 }
+@media only screen and (max-width:750px){
+    .nurse-at-home_div{
+        border-right: none !important;
+    }
+}
 @media only screen and (max-width: 450px) {
      .we_are_doctor_image, .we_are_div_laptop{ 
         display: none !important;
