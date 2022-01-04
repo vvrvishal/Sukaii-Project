@@ -13,6 +13,9 @@
 .row{
     margin-left: 0px; margin-right: 0px;
 }
+.logo_mobile{
+    width: 50%;
+}
 .menu_list{
     font-weight: 500;
     color: rgb(90, 89, 89);
@@ -41,7 +44,7 @@
     left: 8%;
 }
 .nurses_image span h1{
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: .8;
 }
 .weare_text_details{
@@ -240,7 +243,7 @@ font-weight: 600;
 }
 .why_us, .we_are_commited_to{
     font-size: 3rem;
-    color: #ea088b;
+    /* color: #ea088b; */
     font-family: 'Rubik', sans-serif;
 }
 .s_a_h {
@@ -335,6 +338,9 @@ input#freecall_name:focus {
 @media only screen and (max-width:750px){
     .nurse-at-home_div{
         border-right: none !important;
+    }
+    .logo_mobile{
+        width: 75%;
     }
 }
 @media only screen and (max-width: 450px) {
