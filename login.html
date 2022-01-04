@@ -7,6 +7,17 @@
     <title>Sukaii-Login</title>
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <style>
+        .register a{
+            color: #ea088b;;
+        }
+        .submit_btn button{
+            background-color: #ea088b;
+        }
+        .register_btn button{
+            background-color: #949090;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,16 +27,32 @@
                 <div class="login_register">
                     <h5 class="mb-4 text-center">LOGIN / REGISTER</h5>
                     <form action="">
-                       <div class="user_name">
+                       <div class="user_name mb-3">
                             <p class="mb-0"><b>USER NAME</b></p>
                             <input type="text" class="form-control">
                        </div>
-                       <div class="password">
+                       <div class="password ">
                             <p class="mb-0"><b>PASSWORD</b></p>
                             <input type="password" class="form-control">
                             <p class="float-right mb-0"><b><a href="#">forget password</a></b></p>
                        </div>
+                       <div class="reminder">
+                           <form action="">
+                               <!-- <input type="checkbox" > -->
+                                <input type="checkbox" id="reminde_me" name="reminder" value=""> 
+                                <label for="reminde_me" class="mb-0"><b>Remember Password</b></label><br>
+                           </form>
+                       </div>
+                       <div class="submit_btn my-4 text-center">
+                           <button type="button" class="btn text-light"><b>SIGN UP</b></button>
+                       </div>
                     </form>
+                    <div class="register">
+                        <p>Don’t have an account? <a href="#" ><b>Register NOW !</b></a></p>
+                        <div class="register_btn my-4 text-center">
+                            <button type="button" class="btn text-light"><b>REGISTER</b></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-1"></div>
