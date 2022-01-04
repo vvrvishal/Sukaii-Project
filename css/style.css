@@ -223,7 +223,7 @@ font-weight: 600;
 .Nurse_at_home_text, .ELDERLY_CAREGIVERS_text, .LAB_TEST_AT_HOME_text{
     margin: auto;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: darkgray;
     color: #585555;
 }
