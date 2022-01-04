@@ -6,23 +6,14 @@
     box-shadow:none;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* {
-    font-family: 'Rubik', sans-serif;
-    font-family: 'Lato', sans-serif;
 
-} */
      ul .login_row_list, .menu_list{
     list-style: none;
      }
-
- /* *{
-    border: 1px solid red;
-} */
 .row{
     margin-left: 0px; margin-right: 0px;
 }
 .menu_list{
-    /* padding: 0rem 1rem; */
     font-weight: 500;
     color: rgb(90, 89, 89);
 }
@@ -41,16 +32,13 @@
   }
 
 .login_row_list{
-    /* padding: 0rem 1rem; */
     color: gray;
 }
 .nurses_image{
-    /* position: absolute; */
     font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
     top: 37%;
     left: 8%;
-    /* color: whitesmoke; */
 }
 .nurses_image span h1{
     font-size: 5rem;
@@ -62,8 +50,6 @@
 }
 .thb_text {
     width: 39%;
-    /* border: 1px solid; */
-    /* padding-left: 2rem; */
     font-size: 1.5rem;
     font-size: 21px;
     color: #ec098d;
@@ -81,8 +67,6 @@
     font-family: 'Rubik', sans-serif;
     position: absolute;
     right: -5%;
-    /* line-height: 1; */
-    /* margin-bottom: unset; */
     width: 61%;
 }
 .thb_300:after {
@@ -234,15 +218,11 @@ font-weight: 600;
     border-radius: 10px;
 }
 .Nurse_at_home_text, .ELDERLY_CAREGIVERS_text, .LAB_TEST_AT_HOME_text{
-    /* width: 35%; */
     margin: auto;
     margin-bottom: 0.5rem;
     font-size: 2rem;
     color: darkgray;
     color: #585555;
-}
-.Nurse_at_home_text{
-    /* max-width: 145px; */
 }
 .ELDERLY_CAREGIVERS_text{
     width: 100%;
@@ -260,7 +240,6 @@ font-weight: 600;
 }
 .why_us, .we_are_commited_to{
     font-size: 3rem;
-    /* width: 100vw; */
     color: #ea088b;
     font-family: 'Rubik', sans-serif;
 }
@@ -281,9 +260,6 @@ font-weight: 600;
     right: 29%;
     width: 128px;
 }
-/* .s_a_h_img h3{
-    font-size: 1.2rem;
-} */
 .s_a_h_detail{
     font-family: 'Lato', sans-serif;
     width: 94%;
@@ -297,7 +273,6 @@ font-weight: 600;
     text-align: justify;
 }
 .footer h5{
-    /* background-color: #efefef; */
     padding-top: 1.5rem;
     color: #585555;
 }
@@ -320,14 +295,13 @@ font-weight: 600;
 }
 .mobole_no{
     display: flex;
-    /* width: 20%; */
     align-items: center;
     font-size: 25px;
 }
 .book_with_mob {
     display: flex;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     background: #00b4b8;
 }
 .nearse_image{
@@ -341,12 +315,6 @@ font-weight: 600;
 .lab_test{
     margin-bottom: 3rem;
 }
-/* .LAB_TEST_AT_HOME_text{
-    max-width: 176px;
-} */
-/* .service_at_home_div{
-    dis
-} */
 .service_at_home_img {
     width: 30%;
     text-align: center;
@@ -359,9 +327,6 @@ input#freecall_name:focus {
     outline: none !important;
     box-shadow: none !important;
 }
-/* *{
-    border: 1px solid red;
-} */
 @media only screen and (max-width: 1024px) {
     .thb_text {
         font-size: 17px;
@@ -374,26 +339,19 @@ input#freecall_name:focus {
     .thb300 {
         width: 100% !important;
     }
-    .book_now{
-        left: 6% !important;
-        min-width: 346px;
-        max-width: 346px;
+    .thb_300 {
+        right: 1% !important;
     }
-    /* .selctor_dow_arrow {
-        right: -37%;
-    } */
-    /* {
-        display: none !important;
-    } */
-    /* .we_are_for_labtop{
-        display: none;
-    } */
-    /* .thb300_fpr_laptop{
-        display: none;
-    } */
-    /* .we_are_div_laptop{
-        display: none;
-    } */
+    .book_now {
+        width: 90%;
+        margin-right: 10px;
+        margin-left: 5px;
+        border-radius: 13px;
+        position: absolute;
+        font-family: 'Rubik', sans-serif;
+        top: -10%;
+        left: 1%;
+    }
     .we_made_it {
         left: 21%;
         top: -22%;
@@ -423,6 +381,7 @@ input#freecall_name:focus {
     .nurse-at-home_div{
         display: flex;
         align-items: center;
+        border-right: none !important;
     }
     .Nurse_at_home_text{
         width: 100%;
@@ -469,9 +428,6 @@ input#freecall_name:focus {
     .book_3_eassy_step {
         margin-bottom: 2rem;
     }
-    /* .why_us_desktop{
-        display: none;
-    } */
     .we_are_commited_to {
         font-size: 2rem;
     }
@@ -483,5 +439,10 @@ input#freecall_name:focus {
     }
     .nurses_image span h1 {
         font-size: 4rem;
+    }
+    .book_with_mob{
+        position: sticky;
+        bottom: 0%;
+        left: 0%;
     }
   }
