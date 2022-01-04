@@ -387,7 +387,8 @@ input#freecall_name:focus {
         margin-bottom: 0rem;
     }
     .nearse_image img{
-        width: 100%;
+        width: 100% !important;
+        margin-bottom: 1rem;
     }
     .nurse-at-home_div{
         display: flex;
