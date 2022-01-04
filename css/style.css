@@ -418,11 +418,11 @@ input#freecall_name:focus {
     }
     .lab_test{
         text-align: unset;
-        width: 40%;
+        width: 41%;
         margin-bottom: 0rem;
     }
     .lab_test img{
-        width: 100%;
+        width: 100% !important;
     }
     .lab_test_div{
         display: flex;
