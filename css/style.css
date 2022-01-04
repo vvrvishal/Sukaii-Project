@@ -79,8 +79,8 @@
     color: whitesmoke;
     border-radius: 11px;
     font-family: 'Rubik', sans-serif;
-    position: relative;
-    right: -3%;
+    position: absolute;
+    right: -5%;
     /* line-height: 1; */
     /* margin-bottom: unset; */
     width: 61%;
@@ -107,7 +107,7 @@
     margin: auto;
     border-radius: 1rem;
     position: relative;
-    line-height: 2;
+    line-height: 1;
     margin-bottom: 1rem;
 }
 #freecall_name input[placeholder="NAME"]{
@@ -128,7 +128,7 @@ font-weight: 600;
     padding: 0.5rem;
     border-radius: 50px;
     position: absolute;
-    top: 16%;
+    top: 5%;
     left: -5%;
     background: white;
     color: #06b5b9;
@@ -281,6 +281,9 @@ font-weight: 600;
     right: 29%;
     width: 128px;
 }
+/* .s_a_h_img h3{
+    font-size: 1.2rem;
+} */
 .s_a_h_detail{
     font-family: 'Lato', sans-serif;
     width: 94%;
@@ -349,7 +352,7 @@ font-weight: 600;
     text-align: center;
 }
 .saht{
-    border-bottom: 2px solid #00b4b8;
+    border-bottom: 1px solid #00b4b8;
     padding-bottom: 0.15rem;
 }
 input#freecall_name:focus {
@@ -359,12 +362,16 @@ input#freecall_name:focus {
 /* *{
     border: 1px solid red;
 } */
-
+@media only screen and (max-width: 1024px) {
+    .thb_text {
+        font-size: 17px;
+    }
+}
 @media only screen and (max-width: 450px) {
-     .we_are_doctor_image, .we_are_for_labtop, .thb300_fpr_laptop
-    , .we_are_div_laptop{
+     .we_are_doctor_image, .we_are_div_laptop{ 
         display: none !important;
-    }.thb300 {
+    } 
+    .thb300 {
         width: 100% !important;
     }
     .book_now{
@@ -372,9 +379,9 @@ input#freecall_name:focus {
         min-width: 346px;
         max-width: 346px;
     }
-    .selctor_dow_arrow {
+    /* .selctor_dow_arrow {
         right: -37%;
-    }
+    } */
     /* {
         display: none !important;
     } */
@@ -462,9 +469,9 @@ input#freecall_name:focus {
     .book_3_eassy_step {
         margin-bottom: 2rem;
     }
-    .why_us_desktop{
+    /* .why_us_desktop{
         display: none;
-    }
+    } */
     .we_are_commited_to {
         font-size: 2rem;
     }
@@ -473,5 +480,8 @@ input#freecall_name:focus {
     }
     .why_us{
         font-size: 2rem;
+    }
+    .nurses_image span h1 {
+        font-size: 4rem;
     }
   }
