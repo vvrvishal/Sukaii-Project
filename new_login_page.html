@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login_page_style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <style>
+        .full_container{
+    background-image: url(./images/login_page_image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment */
+}
+.login_form {
+    width: 30%;
+    float: right;
+    background: #ffffff9e;
+    border-radius: 8px;
+    padding: 1%;
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    min-width: 430px;
+}
+.btn-sign_in{
+    background: #E1C780 !important;
+}
+
+
+
+/* header  */
+
+
+
+@media(max-width:800px){
+    .login_form{
+        right: 3%;
+        min-width: 400px;
+    }
+}
+@media(max-width:450px){
+    .login_form{
+        top: 20%;
+        padding: 3%;
+
+        min-width: 400px;
+    }
+}
+@media(max-width:380px){
+    .login_form{
+        top: 20%;
+        padding: 3%;
+        min-width: 300px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid full_container">
+       <div class="login_form ">
+           <div class="logo text-center mb-1">
+               <img src="./images/sukaii_logo.PNG" alt="" width="22%" class="">
+           </div>
+           <h4 class="text-center mb-2">LOGIN</h4>
+            <div class="username">
+                <label for="" class="username_lable mb-1"><h6 class="mb-1 pl-1">Username</h6></label>
+                <input type="text" class="user_name form-control mb-2"> 
+            </div>
+            <div class="password">
+                <label for="" class="password_lable mb-1"><h6 class="mb-1 pl-1">Password</h6></label>
+                <input type="text" class="password_input form-control mb-4"> 
+            </div>
+            <button type="button" class="btn btn-sign_in form-control mb-2"><h6 class="mb-0">Sign In</h6></button>
+            <h6  class="float-right">Forget Password</h6>
+       </div>
+    </div>
+</body>
+</html>
