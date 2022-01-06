@@ -43,10 +43,10 @@
     font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
     top: 40%;
-    left: 5%;
+    left: 4%;
 }
 .nurses_image span h1{
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: .8;
 }
 .weare_text_details{
@@ -136,7 +136,7 @@ font-weight: 600;
     font-family: 'Rubik', sans-serif;
 }
 .book_now {
-    min-width: 404px;
+    min-width: 357px;
     max-width: 405px;
     width: 32%;
     margin: auto;
@@ -332,39 +332,106 @@ input#freecall_name:focus {
     outline: none !important;
     box-shadow: none !important;
 }
-
+@media only screen and (min-width: 1350px) {
+    .nurses_image span h1 {
+        font-size: 5rem !important;
+    }
+}
+@media only screen and (max-width: 1220px) {
+    .nurses_image span h1 {
+        font-size: 3.5rem;
+    }
+    .book_now{
+        left:34%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .nurses_image span h1 {
+        font-size: 3rem;
+    }
+    .nurses_image {
+        font-size: 2rem;
+    }
+    .book_now{
+        left:31%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .nurses_image span h1 {
+        font-size: 2.5rem;
+    }
+    .nurses_image {
+        font-size: 1.5rem;
+    }
+    .book_now{
+        left:28%;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .thb_text {
         font-size: 17px;
     }
 }
-@media only screen and (max-width:750px){
+@media only screen and (max-width:768px){
     .nurse-at-home_div{
         border-right: none !important;
     }
     .logo_mobile{
         width: 75%;
     }
+    .book_now{
+        left:25%;
+    }
+}
+@media only screen and (max-width:688px){
+    .book_now{
+        left:21%;
+    }
+}
+@media only screen and (max-width:600px){
+    .book_now{
+        left:17%;
+    }
+}
+@media only screen and (max-width:550px){
+    .book_now{
+        left:13%;
+    }
+}
+@media only screen and (max-width:500px){
+    .book_now{
+        left:10%;
+    }
 }
 @media only screen and (max-width: 450px) {
      .we_are_doctor_image, .we_are_div_laptop{ 
         display: none !important;
     } 
+    .carousel_1_image h1{
+        font-size: 25px;
+    }
+    .carousel_1_image{
+        font-size: 1rem;
+    }
     .thb300 {
         width: 100% !important;
+    }
+    .t_way{
+        padding-left: 0%;
     }
     .thb_300 {
         right: 1% !important;
     }
     .book_now {
-        width: 90%;
+        width: 57% !important;
+        max-width: 260px !important;
         margin-right: 10px;
         margin-left: 5px;
         border-radius: 13px;
         position: absolute;
         font-family: 'Rubik', sans-serif;
         top: -10%;
-        left: 1%;
+        left: 3%;
     }
     .we_made_it {
         left: 21%;

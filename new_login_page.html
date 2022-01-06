@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./css/login_page_style.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
         .full_container{
     background-image: url(./images/login_image_2.jpg);
     width: 100%;
@@ -21,7 +26,7 @@
 .login_form {
     width: 30%;
     float: right;
-    background: #ffffff9e;
+    background: #ffffff;
     border-radius: 8px;
     padding: 1%;
     position: absolute;
@@ -30,7 +35,7 @@
     min-width: 430px;
 }
 .btn-sign_in{
-    background: #E1C780 !important;
+    background:  #6bdadc !important;
 }
 
 
@@ -45,6 +50,7 @@
         min-width: 400px;
     }
 }
+
 @media(max-width:450px){
     .login_form{
         top: 20%;
@@ -63,12 +69,13 @@
     </style>
 </head>
 <body>
+    <header id="Header"></header>
     <div class="container-fluid full_container">
        <div class="login_form ">
            <div class="logo text-center mb-1">
                <img src="./images/sukaii_logo.PNG" alt="" width="22%" class="">
            </div>
-           <h4 class="text-center mb-2">LOGIN</h4>
+           <h4 class="text-center mb-2" style="font-family: 'Rubik', sans-serif !important; font-weight: 600;">LOGIN</h4>
             <div class="username">
                 <label for="" class="username_lable mb-1"><h6 class="mb-1 pl-1">Username</h6></label>
                 <input type="text" class="user_name form-control mb-2"> 
@@ -79,7 +86,21 @@
             </div>
             <button type="button" class="btn btn-sign_in form-control mb-2"><h6 class="mb-0">Sign In</h6></button>
             <h6  class="float-right">Forget Password</h6>
+            <div class="register">
+                <p>Don't have an account? <a href="#" ><b>REGISTER NOW !</b></a></p>
+                <!-- <div class="register_btn my-4 text-center">
+                    <button type="button" class="btn text-light"><b>REGISTER</b></button>
+                </div> -->
+            </div>
        </div>
     </div>
+    <div id="footer"></div>
+
 </body>
+<script> 
+    $(function(){
+      $("#Header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
 </html>
