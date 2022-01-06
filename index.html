@@ -1,370 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sukaii</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <!-- <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script> -->
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <style>
-    
+
 </style>
+
 <body>
-    <div class="align-items-center border-bottom row">
-        <div class="col col-md-3 col-sm-6">
-            <img src="./images/sukaii_transparent_logo.png" alt="Sukaii" class="p-2 logo_mobile"> 
-        </div>
-        <div class="col-6 col-md-9 col-sm-6 hide_menu">
-            <div class="d-md-block d-none justify-content-end login_row row w-100">
-                <ul class="d-flex float-right list-unstyled mb-2">
-                    <li class="login_row_list px-3">Login/Sign up</li>
-                    <li class="login_row_list px-3"><span class="p-2"><i class="fas fa-map-marker-alt"></i></span>Bangkok</li>
-                </ul>
-            </div>
-            <div class="d-md-block d-none float-right row w-100">
-                <ul class="d-flex float-right mb-0">
-                    <li class="menu_list px-3">HOME</li>
-                    <li class="menu_list  px-3">SERVICES</li>
-                    <li class="menu_list px-3">FAQ</li>
-                    <li class="menu_list px-3">PARTNERS</li>
-                    <li class="menu_list px-3">ABOUT US</li>
-                </ul>
-            </div>
-            <div class="align-items-center d-flex justify-content-end mobile_menu">
-                <ul class="d-block d-md-none m-0"  onclick="open_menu()">
-                    <li class="tab_icon_menu_list list-unstyled" style="font-size: 20px;"><span><i class="fas fa-bars "></i></span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab_mobile_nav  w-50" id="mobile_menu_btn" style="display: none;">
-            <ul class="list-unstyled form-control">
-                <li class="border-0 form-control">HOME</li>
-                <li class="border-0 form-control">SERVICES</li>
-                <li class="border-0 form-control">FAQ</li>
-                <li class="border-0 form-control">PARTNERS</li>
-                <li class="border-0 form-control">ABOUT US</li>
-            </ul>
-        </div>
-    </div>
+    <header id="Header"></header>
+
     <div class="header_mobile_carousel d-block d-md-none row mb-4">
         <div class="col-md-12">
             <div id="mobile_carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#mobile_carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#mobile_carousel" data-slide-to="1"></li>
-                  <li data-target="#mobile_carousel" data-slide-to="2"></li>
+                    <li data-target="#mobile_carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mobile_carousel" data-slide-to="1"></li>
+                    <li data-target="#mobile_carousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="./images/Healthcare-at-home.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/Covid-Test.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/lab-test-at-home.jpg" alt="Third slide">
-                  </div>
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/Healthcare-at-home.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/Covid-Test.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/lab-test-at-home.jpg" alt="Third slide">
+                    </div>
                 </div>
                 <a class="carousel-control-prev" href="#mobile_carousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#mobile_carousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                 </a>
-              </div>
+            </div>
         </div>
-       
+
     </div>
     <div class="row mb-5">
-        <!-- Carousel for mobile  -->
-        
-        <!-- at your home -->
-       <div class="col-md-4 px-0  d-none d-md-block">
-           <img src="./images/image.svg" alt="" class="w-100" style="margin-top: -4px;">
-           <h3 class="nurses_image mb-0 position-absolute text-light"><span><h1 class="mb-0">Healthcare</h1></span>at your Home</h3>
-       </div>
-       <div class="col-md-8 px-0  d-none d-md-block">
-           <img src="./images/Healthcare-at-home (1).jpg" class="w-100" style="height: 88.5%;" alt="">
-       </div>
-   </div>
+        <div class="col-md-12 p-0">
+            <img src="./images/front-image.jpg" alt="" class="w-100">
+            <div class=" px-0  d-none d-md-block">
+                <h3 class="nurses_image mb-0 position-absolute text-light"><span>
+                        <h1 class="mb-0">Healthcare</h1>
+                    </span>at your Home</h3>
+            </div>
+        </div>
+
+    </div>
     <div class="container d-md-flex d-sm-block" style="margin-bottom: 7rem;">
-            <div class="col-md-4 col-sm-12 text-center">
-                <img src="./images/doctors_image-1.PNG" alt="" style="border-radius: 25px; width: 100%;" class="we_are_doctor_image">
+        <div class="col-md-4 col-sm-12 text-center">
+            <img src="./images/doctors_image-1.PNG" alt="" style="border-radius: 25px; width: 100%;"
+                class="we_are_doctor_image">
+        </div>
+        <div class="col-md-4 col-sm-12 px-4 we_are_div_laptop">
+            <h2 class="weare we_are_for_labtop">WE ARE</h2>
+            <p class="text-justify weare_text_details text-dark">Basic healthcare should not require a trip to the
+                hospital. Get services like blood draws and diagnostics, nursing care, and Covid tests through our
+                trained nurses at the comfort of your home.</p>
+            <p class="text-justify text-dark">Our proprietary Sukaii Report also makes your health check results easy to
+                read and understand. <b>Read more...</b></p>
+        </div>
+        <div class="col-md-4 col-sm-12 thb300_fpr_laptop">
+            <div class="mb-4 mb-lg-3 row thb300" style="margin: auto; width: 100%;">
+                <h4 class="thb_text">FULL BODY CHECK UP ONLY AT</h4>
+                <h1 class="thb_300"><span>THB300</span></h1>
             </div>
-            <div class="col-md-4 col-sm-12 px-4 we_are_div_laptop"> 
-                <h2 class="weare we_are_for_labtop">WE ARE</h2>
-                <p class="text-justify weare_text_details text-dark">Basic healthcare should not require a trip to the hospital. Get services like blood draws and diagnostics, nursing care, and Covid tests through our trained nurses at the comfort of your home.</p>
-                <p class="text-justify text-dark">Our proprietary Sukaii Report also makes your health check results easy to read and understand. <b>Read more...</b></p>
-            </div>
-            <div class="col-md-4 col-sm-12 thb300_fpr_laptop">
-                <div class="mb-4 mb-lg-3 row thb300" style="margin: auto; width: 100%;">
-                    <h4 class="thb_text">FULL BODY CHECK UP ONLY AT</h4>
-                    <h1 class="thb_300"><span>THB300</span></h1>
+            <div class="row">
+                <div class="freecall_div border-dark p-2 form-control ">
+                    <span><i class="fas fa-user freecall_name_icon"></i></span>
+                    <input type="text" name="Name" class="border-0 pl-4" placeholder="NAME" id="freecall_name">
                 </div>
-                <div class="row">
-                   <div class="freecall_div border-dark p-2 form-control ">
-                       <span><i class="fas fa-user freecall_name_icon"></i></span>
-                       <input type="text" name="Name" class="border-0 pl-4" placeholder="NAME" id="freecall_name">
-                    </div>
-                    <div class="freecall_div border-dark form-control py-0">
-                        <span><i class="fas fa-map-marker-alt freecall_name_icon"></i></span>
-                        <select name="freecall_location" id="freecall_location" placeholder="LOCATION" class="border-0 form-control py-0">
-                            <option value="LOCATION" class="form-control">LOCATION</option>
-                            <option value="MUMBAI" class="form-control">MUMBAI</option>
-                            <option value="GUJRAT" class="form-control">GUJRAT</option>
-                            <option value="PUNE" class="form-control">PUNE</option>
-                            <option value="SIKKIM" class="form-control">SIKKIM</option>
-                        </select>
-                    </div>
-                     <div class="freecall_div border-dark form-control py-0">
-                        <span><i class="fas fa-heartbeat freecall_name_icon"></i></span>
-                        <select name="freecall_service" id="freecall_service" class="border-0 form-control py-0">
-                            <option value="LOCATION" class="form-control">LOCATION</option>
-                            <option value="MUMBAI" class="form-control">MUMBAI</option>
-                            <option value="GUJRAT" class="form-control">GUJRAT</option>
-                            <option value="PUNE" class="form-control">PUNE</option>
-                            <option value="SIKKIM" class="form-control">SIKKIM</option>
-                        </select>
-                     </div>
-                     <div class="border call_btn     m-auto px-3 py-2">
-                         <h3 class="mb-0">BOOK NOW</h3>
-                     </div>
+                <div class="freecall_div border-dark form-control py-0">
+                    <span><i class="fas fa-map-marker-alt freecall_name_icon"></i></span>
+                    <select name="freecall_location" id="freecall_location" placeholder="LOCATION"
+                        class="border-0 form-control py-0">
+                        <option value="LOCATION" class="form-control">LOCATION</option>
+                        <option value="MUMBAI" class="form-control">MUMBAI</option>
+                        <option value="GUJRAT" class="form-control">GUJRAT</option>
+                        <option value="PUNE" class="form-control">PUNE</option>
+                        <option value="SIKKIM" class="form-control">SIKKIM</option>
+                    </select>
+                </div>
+                <div class="freecall_div border-dark form-control py-0">
+                    <span><i class="fas fa-heartbeat freecall_name_icon"></i></span>
+                    <select name="freecall_service" id="freecall_service" class="border-0 form-control py-0">
+                        <option value="LOCATION" class="form-control">LOCATION</option>
+                        <option value="MUMBAI" class="form-control">MUMBAI</option>
+                        <option value="GUJRAT" class="form-control">GUJRAT</option>
+                        <option value="PUNE" class="form-control">PUNE</option>
+                        <option value="SIKKIM" class="form-control">SIKKIM</option>
+                    </select>
+                </div>
+                <div class="border call_btn     m-auto px-3 py-2">
+                    <h3 class="mb-0">BOOK NOW</h3>
                 </div>
             </div>
         </div>
     </div>
-        <div class="book_3_eassy_step col-sm-12">
-            <!-- <img src=" alt=""> -->
-            <h4 class="text-center we_made_it">WE MADE IT SIMPLE</h4>
-            <div class="bg-dark book_now py-2 text-light text-center">
-                <h2 class="mb-0"><b style="color: #00b4b8;">BOOK NOW</b></h2><p class="mb-0"><b>In Just 3 easy steps</b></p>
-             </div>
-             <div class="imp_3_way">
-                 <ul class="pt-5">
-                     <li class="text-center text-dark f_way my-4"><span class="f_way_icon"><i class="fas fa-map-marker-alt"></i></span> Select Location</li>
-                     <li class="text-center text-dark s_way mb-4"><span class="s_way_icon px-3" style="padding: 0.85rem 0.3rem"><i class="fas fa-hand-holding-medical"></i></span> Select Location</li>
-                     <li class="text-center text-dark t_way"><span class="t_way_icon" style="padding: 0.7rem 1.2rem;"><i class="far fa-calendar-alt"></i></span> Select Location</li>
-                 </ul>
-             </div>
+    </div>
+    <div class="book_3_eassy_step col-sm-12">
+        <!-- <img src=" alt=""> -->
+        <h4 class="text-center we_made_it" id="we_made_it">WE MADE IT SIMPLE</h4>
+        <div class="bg-dark book_now py-2 text-light text-center">
+            <h2 class="mb-0"><b style="color: #00b4b8;">BOOK NOW</b></h2>
+            <p class="mb-0"><b>In Just 3 easy steps</b></p>
         </div>
+        <div class="imp_3_way">
+            <ul class="pt-5">
+                <li class="text-center text-dark f_way my-4"><span class="f_way_icon"><i
+                            class="fas fa-map-marker-alt"></i></span> Select Location</li>
+                <li class="text-center text-dark s_way mb-4"><span class="s_way_icon px-3"
+                        style="padding: 0.85rem 0.3rem"><i class="fas fa-hand-holding-medical"></i></span> Select
+                    Location</li>
+                <li class="text-center text-dark t_way"><span class="t_way_icon" style="padding: 0.7rem 1.2rem;"><i
+                            class="far fa-calendar-alt"></i></span> Select Location</li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="row" style="    margin-bottom: 4rem;">
-            <div class="align-items-sm-center col-md-4 col-sm-12 d-md-block d-sm-flex nurse-at-home_div" style="border-right: 2px solid #898686;">
-                <div class=" nearse_image"><img src="./images/ealdrly_img(2).png" alt="" class="w-75"></div>
-                <div class="" style="width: 100%; margin: auto;">
-                    <h2 class="Nurse_at_home_text text-center">HEALTH CHECK</h2>
-                <div class="book_btn text-center"><button type="button" class="btn book_services_btn text-light">BOOK</button></div>
+            <div class="col-md-4" id="healthcare_div">
+                <div class="align-items-sm-center col-md-12 col-sm-12 d-md-block d-sm-flex nurse-at-home_div"
+                    style="border-right: 2px solid #898686;">
+                    <div class=" nearse_image"><img src="./images/ealdrly_img(2).png" alt="" class="w-75"></div>
+                    <div class="" style="width: 100%; margin: auto;">
+                        <h2 class="Nurse_at_home_text text-center">HEALTH CHECK</h2>
+                        <div class="book_btn text-center"><button type="button" class="btn book_services_btn text-light"
+                                id="book_health_service">BOOK</button></div>
+                    </div>
                 </div>
             </div>
-            <div class="align-items-sm-center col-md-4 col-sm-12 d-md-block d-sm-flex nurse-at-home_div" style="border-right: 2px solid #898686;">
-                <div class=" nearse_image"><img src="./images/nurse-at-home(2).png" alt="" class="w-75"></div>
-                <div class="" style="width: 100%; margin: auto;">
-                    <h2 class="Nurse_at_home_text text-center">NURSE CARE</h2>
-                <div class="book_btn text-center"><button type="button" class="btn book_services_btn text-light">BOOK</button></div>
+            <div class="col-md-4" id="nurse_service_div">
+                <div class="align-items-sm-center col-md-12 col-sm-12 d-md-block d-sm-flex nurse-at-home_div"
+                    style="border-right: 2px solid #898686;">
+                    <div class=" nearse_image"><img src="./images/nurse-at-home(2).png" alt="" class="w-75"></div>
+                    <div class="" style="width: 100%; margin: auto;">
+                        <h2 class="Nurse_at_home_text text-center">NURSE CARE</h2>
+                        <div class="book_btn text-center"><button type="button"
+                                class="btn book_services_btn text-light">BOOK</button></div>
+                    </div>
                 </div>
             </div>
-            <div class="align-items-sm-center col-md-4 col-sm-12 d-md-block d-sm-flex lab_test_div">
-                <div class="text-center lab_img lab_test"><img src="./images/lab-test(2).png" alt="" class="w-75"></div>
-                <div class="" style="width: 100%; margin: auto;">
-                    <h2 class="LAB_TEST_AT_HOME_text text-center">COVID TEST</h2>
-                <div class="book_btn text-center"><button type="button" class="btn book_services_btn text-light">BOOK</button></div>
+            <div class="col-md-4" id="covid_care_div">
+                <div class="align-items-sm-center col-md-12 col-sm-12 d-md-block d-sm-flex lab_test_div">
+                    <div class="text-center lab_img lab_test"><img src="./images/lab-test(2).png" alt="" class="w-75">
+                    </div>
+                    <div class="" style="width: 100%; margin: auto;">
+                        <h2 class="LAB_TEST_AT_HOME_text text-center">COVID TEST</h2>
+                        <div class="book_btn text-center"><button type="button"
+                                class="btn book_services_btn text-light">BOOK</button></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-        <div class="mb-4 row why_us_desktop" style="background: #efefef; margin-left: 0px; margin-right: 0px;">
-            <div class="pt-4 pb-3 w-100 col-sm-12"><h1 class="text-center why_us w-100">WHY SUKAII</h1></div>
-            <div class="row" style=" margin-left: 0px; margin-right: 0px;">
+
+    <div class="mb-4 row why_us_desktop" style="background: #efefef; margin-left: 0px; margin-right: 0px;">
+        <div class="pt-4 pb-3 w-100 col-sm-12">
+            <h1 class="text-center why_us w-100">WHY SUKAII</h1>
+        </div>
+        <div class="row" style=" margin-left: 0px; margin-right: 0px;">
+            <div class="col-md-4">
+                <div class="f_s_c text-center pb-4"> <img src="./images/Free-Sample-Collection.png" class="" width="40%"
+                        alt="" style="border-radius: 32px;"></div>
+                <div class="f_s_c_heading pb-2">
+                    <h3 class="text-center mb-0">
+                        <div class="">Sample Collected at Home</div>
+                    </h3>
+                </div>
+                <div class="f_s_c_detail">
+                    <p>Our trained nurse will come to your home or office to collect the blood or sample for testing.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="f_d_c pb-4"><img src="./images/Free-Doctor-Consultation.png" class="" width="40%" alt=""
+                        style="border-radius: 32px;"></div>
+                <div class="f_d_c_heading pb-2">
+                    <h3 class="text-center mb-0">
+                        <div class="">State-of-the-art Diagnostics</div>
+                    </h3>
+                </div>
+                <div class="f_d_c_detail">
+                    <p>Samples are analyzed in state-of-the-art labs through our accredited partners</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="f_sp_c pb-4"> <img src="./images/Free-Smart-Reports.png" class="" width="40%" alt=""
+                        style="border-radius: 32px;"></div>
+                <div class="f_sp_c_heading pb-2">
+                    <h3 class="text-center mb-0">
+                        <div>Sukaii Report</div>
+                    </h3>
+                </div>
+                <div class="f_sp_c_detail">
+                    <p>Our proprietary report format finally allows you to understand the results of your tests and
+                        track your health over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    </div>
+    </div>
+    <div class="row d-block d-md-none">
+        <div class="pt-4 pb-3 w-100 col-sm-12">
+            <h1 class="text-center why_us w-100">BENEFITS</h1>
+        </div>
+        <div class="row">
+            <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
+                <div class="free text-center"><img src="./images/patient_center.PNG" alt="" class="w-75"></div>
+                <div class="text-justify w-75 px-2">
+                    <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
+                    <p>Get basic healthcare services in the comfort and safety of your home.</p>
+                </div>
+            </div>
+            <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
+                <div class="free text-center"><img src="./images/ontime_service.PNG" alt="" class="w-75"></div>
+                <div class="text-justify w-75 px-2">
+                    <h5 class=" mb-1 saht">CONVENIENT</h5>
+                    <p>Book online and schedule the visit</p>
+                </div>
+            </div>
+            <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
+                <div class="free text-center"><img src="./images/patient_center.PNG" alt="" class="w-75"></div>
+                <div class="text-justify w-75 px-2">
+                    <h5 class=" mb-1 saht">PATIENT FIRST</h5>
+                    <p>We put you first and believe you should have fast and easy access to your healthcare</p>
+                </div>
+            </div>
+            <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
+                <div class="free text-center"><img src="./images/fast_and_accurate.PNG" alt="" class="w-75"></div>
+                <div class="text-justify w-75 px-2">
+                    <h5 class=" mb-1 saht">FAST & ACCURATE</h5>
+                    <p>Our network of licensed labs ensure your results are accurate and delivered on-time</p>
+                </div>
+            </div>
+            <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
+                <div class="free text-center"><img src="./images/nurse_and_tecnitian.PNG" alt="" class="w-75"></div>
+                <div class="text-justify w-75 px-2">
+                    <h5 class=" mb-1 saht">CERTIFIED NURSES</h5>
+                    <p>Our nurses are certified and trained to ensure you get the highest quality care</p>
+                </div>
+            </div>
+
+            <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
+                <div class="free text-center"><img src="./images/safe_and_secured.PNG" alt="" class="w-75"></div>
+                <div class="text-justify w-75 px-2">
+                    <h5 class=" mb-1 saht">COST EFFECTIVE</h5>
+                    <p>We eliminate the high overheads of hospitals and pass the savings to you</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="d-md-block d-none recommeded_to_desktop row" id="recommeded_to_desktop"
+            style="margin-bottom: 5rem;">
+            <div class="pt-4 pb-3 w-100">
+                <h1 class="mb-4 text-center we_are_commited_to">BENEFITS</h1>
+            </div>
+            <div class="row ">
+                <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h" style=" margin-top: 3rem;">
+                        <div class="s_a_h_img"><img src="./images/service_at_home.PNG" alt=""></div>
+                        <h3 style="padding-top: 5rem; font-size: 1.4rem;">SERVICE AT HOME</h3>
+                        <p class="s_a_h_detail">Get basic healthcare services in the comfort and safety of your home</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h" style=" margin-top: 3rem;">
+                        <div class="s_a_h_img"><img src="./images/ontime_service.PNG" alt=""></div>
+                        <h3 style="padding-top: 5rem; font-size: 1.4rem;"> CONVENIENT</h3>
+                        <p class="s_a_h_detail">Book online and schedule the visit</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h" style=" margin-top: 3rem;">
+                        <div class="s_a_h_img"><img src="./images/patient_center.PNG" alt=""></div>
+                        <h3 style="padding-top: 5rem; font-size: 1.4rem;">PATIENT FIRST</h3>
+                        <p class="s_a_h_detail">We put you first and believe you should have fast and easy access to
+                            your healthcare</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/fast_and_accurate.PNG" alt=""></div>
+                        <h3 style="padding-top: 5rem; font-size: 1.4rem;">FAST & ACCURATE</h3>
+                        <p class="s_a_h_detail">Our network of licensed labs ensure your results are accurate and
+                            delivered on-time</p>
+                    </div>
+                </div>
                 <div class="col-md-4">
-                   <div class="f_s_c text-center pb-4"> <img src="./images/Free-Sample-Collection.png" class="" width="40%" alt="" style="border-radius: 32px;"></div>
-                   <div class="f_s_c_heading pb-2"><h3 class="text-center mb-0"><div class="">Sample Collected at Home</div></h3></div>
-                   <div class="f_s_c_detail">
-                       <p>Our trained nurse will come to your home or office to collect the blood or sample for testing.</p>
-                   </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="f_d_c pb-4"><img src="./images/Free-Doctor-Consultation.png" class="" width="40%" alt="" style="border-radius: 32px;"></div>
-                    <div class="f_d_c_heading pb-2"><h3 class="text-center mb-0"><div class="">State-of-the-art Diagnostics</div></h3></div>
-                    <div class="f_d_c_detail">
-                        <p>Samples are analyzed in state-of-the-art labs through our accredited partners</p>
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/nurse_and_tecnitian.PNG" alt=""></div>
+                        <h3 style=" padding-top: 5rem; font-size: 1.4rem;">CERTIFIED NURSES</h3>
+                        <p class="s_a_h_detail" style="padding-bottom:1rem;">Our nurses are certified and trained to
+                            ensure you get the highest quality care</p>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                   <div class="f_sp_c pb-4"> <img src="./images/Free-Smart-Reports.png" class="" width="40%" alt="" style="border-radius: 32px;"></div>
-                   <div class="f_sp_c_heading pb-2"><h3 class="text-center mb-0"><div>Sukaii Report</div></h3></div>
-                   <div class="f_sp_c_detail">
-                    <p>Our proprietary report format finally allows you to understand the results of your tests and track your health over time.</p>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            </div> 
-        </div>
-        <div class="row d-block d-md-none">
-            <div class="pt-4 pb-3 w-100 col-sm-12"><h1 class="text-center why_us w-100">BENEFITS</h1></div>
-            <div class="row">
-                <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
-                    <div class="free text-center"><img src="./images/patient_center.PNG" alt="" class="w-75"></div>
-                    <div class="text-justify w-75 px-2">
-                        <h5 class=" mb-1 saht">SERVICES AT HOME</h5>
-                        <p>Get basic healthcare services in the comfort and safety of your home.</p>
+                <div class="col-md-4">
+                    <div class="s_a_h" style=" margin-top: 5rem;">
+                        <div class="s_a_h_img"><img src="./images/safe_and_secured.PNG" alt=""></div>
+                        <h3 style="padding-top: 5rem; font-size: 1.4rem;">COST EFFECTIVE</h3>
+                        <p class="s_a_h_detail">We eliminate the high overheads of hospitals and pass the savings to you
+                        </p>
                     </div>
                 </div>
-                <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
-                    <div class="free text-center"><img src="./images/ontime_service.PNG" alt="" class="w-75"></div>
-                    <div class="text-justify w-75 px-2">
-                        <h5 class=" mb-1 saht">CONVENIENT</h5>
-                        <p>Book online and schedule the visit</p>
-                    </div>
-                </div>
-                <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
-                    <div class="free text-center"><img src="./images/patient_center.PNG" alt="" class="w-75"></div>
-                    <div class="text-justify w-75 px-2">
-                        <h5 class=" mb-1 saht">PATIENT FIRST</h5>
-                        <p>We put you first and believe you should have fast and easy access to your healthcare</p>
-                    </div>
-                </div>
-                <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
-                    <div class="free text-center"><img src="./images/fast_and_accurate.PNG" alt="" class="w-75"></div>
-                    <div class="text-justify w-75 px-2">
-                        <h5 class=" mb-1 saht">FAST & ACCURATE</h5>
-                        <p>Our network of licensed labs ensure your results are accurate and delivered on-time</p>
-                    </div>
-                </div>
-                <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
-                    <div class="free text-center"><img src="./images/nurse_and_tecnitian.PNG" alt="" class="w-75"></div>
-                    <div class="text-justify w-75 px-2">
-                        <h5 class=" mb-1 saht">CERTIFIED NURSES</h5>
-                        <p>Our nurses are certified and trained to ensure you get the highest quality care</p>
-                    </div>
-                </div>
-
-                <div class="align-items-center col-sm-12 d-flex free_sample_collection_div mb-3">
-                    <div class="free text-center"><img src="./images/safe_and_secured.PNG" alt="" class="w-75"></div>
-                    <div class="text-justify w-75 px-2">
-                        <h5 class=" mb-1 saht">COST EFFECTIVE</h5>
-                        <p>We eliminate the high overheads of hospitals and pass the savings to you</p>
-                    </div>
-                </div>
-                </div>
-        </div>
-        </div>
-        <div class="container">
-            <div class="d-md-block d-none recommeded_to_desktop row" style="margin-bottom: 5rem;" >
-                <div class="pt-4 pb-3 w-100"><h1 class="mb-4 text-center we_are_commited_to">BENEFITS</h1></div>
-                <div class="row ">
-                    <div class="col-md-4 col-sm-12">
-                      <div class="s_a_h" style=" margin-top: 3rem;">
-                          <div class="s_a_h_img"><img src="./images/service_at_home.PNG" alt=""></div>
-                          <h3 style="padding-top: 5rem; font-size: 1.4rem;">SERVICE AT HOME</h3>
-                          <p class="s_a_h_detail">Get basic healthcare services in the comfort and safety of your home</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="s_a_h"  style=" margin-top: 3rem;">
-                            <div class="s_a_h_img"><img src="./images/ontime_service.PNG" alt=""></div>
-                            <h3 style="padding-top: 5rem; font-size: 1.4rem;"> CONVENIENT</h3>
-                            <p class="s_a_h_detail">Book online and schedule the visit</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="s_a_h" style=" margin-top: 3rem;">
-                            <div class="s_a_h_img"><img src="./images/patient_center.PNG" alt=""></div>
-                            <h3 style="padding-top: 5rem; font-size: 1.4rem;">PATIENT FIRST</h3>
-                            <p class="s_a_h_detail">We put you first and believe you should have fast and easy access to your healthcare</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="s_a_h"  style=" margin-top: 5rem;">
-                            <div class="s_a_h_img"><img src="./images/fast_and_accurate.PNG" alt=""></div>
-                            <h3 style="padding-top: 5rem; font-size: 1.4rem;">FAST & ACCURATE</h3>
-                            <p class="s_a_h_detail">Our network of licensed labs ensure your results are accurate and delivered on-time</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="s_a_h" style=" margin-top: 5rem;">
-                            <div class="s_a_h_img"><img src="./images/nurse_and_tecnitian.PNG" alt=""></div>
-                            <h3 style=" padding-top: 5rem; font-size: 1.4rem;">CERTIFICED NURSES</h3>
-                            <p class="s_a_h_detail" style="padding-bottom:1rem;">Our nurses are certified and trained to ensure you get the highest quality care</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4" >
-                        <div class="s_a_h" style=" margin-top: 5rem;">
-                            <div class="s_a_h_img"><img src="./images/safe_and_secured.PNG" alt=""></div>
-                            <h3 style="padding-top: 5rem; font-size: 1.4rem;">COST EFFECTIVE</h3>
-                            <p class="s_a_h_detail">We eliminate the high overheads of hospitals and pass the savings to you</p>
-                        </div>
-                    </div>
-                </div> 
             </div>
         </div>
     </div>
-        <div class="row footer" style="background-color: #bdbdbd;  margin-left: 0px; margin-right: 0px;">
-            <div class="col-md-3 pl-md-5">
-                <h5>ABOUT US</h5>
-                <p class="about_us_footer">Sukaii was created with a simple vision, that healthcare should not require a trip to the hospital. Through technology and the best patient-centric care, we aim to deliver on this vision.</p>
-            </div>
-            <div class="col-md-3 ">
-                <h5>OUR SERVICES</h5>
-                <ul>
-                    <li class="our_services_list"><span>Nurses Service at Home</span></li>
-                    <li  class="our_services_list"><span>Elderly Caregiver</span></li>
-                    <li  class="our_services_list"><span>Lab test</span></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>QUIK LINKS</h5>
-                <ul>
-                    <li class="quik_link_list"><span>Home</span></li>
-                    <li  class="quik_link_list"><span>FAQ</span></li>
-                    <li class="quik_link_list"><span>Partners with Us</span></li>
-                    <li class="quik_link_list"><span>Get Free Call Now </span></li>
-                    <li class="quik_link_list"><span>Book Appointment</span></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>CONTACT US</h5>
-                <p class="connect_us_add"><b>Address :</b> 513 Arenja Corner Sector 17 Mumbai-702</p>
-                <p class="connect_us_email"><b>Email :</b> vashi@gbtech.in</p>
-                <p class="connect_us_call"><b>Call : </b>+91 1234567890</p>
-            </div>
-            <p class="text-center copy_write">Copyright <span><i class="far fa-copyright"></i></span> 2021 sukaii. All Rights Reserved.</p>
+    </div>
+    <div class="row footer" style="background-color: #bdbdbd;  margin-left: 0px; margin-right: 0px;">
+        <div class="col-md-3 pl-md-5">
+            <h5>ABOUT US</h5>
+            <p class="about_us_footer">Sukaii was created with a simple vision, that healthcare should not require a
+                trip to the hospital. Through technology and the best patient-centric care, we aim to deliver on this
+                vision.</p>
         </div>
-        <!-- <div class="book_with_mob row text-center">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 d-flex">
-                <div class="form-control mobole_no" style="display: flex;"><span><i class="fas fa-mobile-alt"></i></span><input type="number" class="form-control" style="border: none;" placeholder="ENTER YOUR MOBILE NUMBER"></div>
-                <div class="book_now_btn pl-5"><button type="btn" class="btn bnp" style="padding: 0.62rem;">BOOK NOW</button></div>
-            </div>
-            <div class="col-md-3"></div>
+        <div class="col-md-3 ">
+            <h5>OUR SERVICES</h5>
+            <ul>
+                <li class="our_services_list"><span>Nurses Service at Home</span></li>
+                <li class="our_services_list"><span>Elderly Caregiver</span></li>
+                <li class="our_services_list"><span>Lab test</span></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>QUIK LINKS</h5>
+            <ul>
+                <li class="quik_link_list"><span>Home</span></li>
+                <li class="quik_link_list"><span>FAQ</span></li>
+                <li class="quik_link_list"><span>Partners with Us</span></li>
+                <li class="quik_link_list"><span>Get Free Call Now </span></li>
+                <li class="quik_link_list"><span>Book Appointment</span></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h5>CONTACT US</h5>
+            <p class="connect_us_add"><b>Address :</b> 513 Arenja Corner Sector 17 Mumbai-702</p>
+            <p class="connect_us_email"><b>Email :</b> vashi@gbtech.in</p>
+            <p class="connect_us_call"><b>Call : </b>+91 1234567890</p>
+        </div>
+        <p class="text-center copy_write">Copyright <span><i class="far fa-copyright"></i></span> 2021 sukaii. All
+            Rights Reserved.</p>
+    </div>
 
-        </div> -->
 </body>
 <script>
+    $(function () {
+        $("#Header").load("header.html");
+        //   $("#footer").load("footer.html"); 
+    });
+</script>
+<script>
+
     var toggle_menu_btn = document.getElementById('mobile_menu_btn');
-    function open_menu(){
+    function open_menu() {
         console.log(1);
-        if(toggle_menu_btn.style.display == 'none' || toggle_menu_btn.style.display == ""){
+        if (toggle_menu_btn.style.display == 'none' || toggle_menu_btn.style.display == "") {
             toggle_menu_btn.style.display = "block";
             console.log(2);
-        }else{
+        } else {
             toggle_menu_btn.style.display = "none";
             console.log(3);
         }
     };
+
+    $("#book_health_service").click(function () {
+        $("#nurse_service_div").hide();
+        $("#covid_care_div").hide();
+        $("#nurse_service_div").addClass('col-md-8');
+    })
+
 </script>
+
 </html>

@@ -18,7 +18,9 @@
 }
 .menu_list{
     font-weight: 500;
-    color: rgb(90, 89, 89);
+}
+.menu_list a{
+    text-decoration: none;
 }
 .tab_mobile_nav{
     font-weight: 600;
@@ -40,11 +42,11 @@
 .nurses_image{
     font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
-    top: 37%;
-    left: 8%;
+    top: 40%;
+    left: 5%;
 }
 .nurses_image span h1{
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: .8;
 }
 .weare_text_details{
@@ -242,7 +244,7 @@ font-weight: 600;
     color: gray;
 }
 .why_us, .we_are_commited_to{
-    font-size: 3rem;
+    font-size: 2.5rem;
     /* color: #ea088b; */
     font-family: 'Rubik', sans-serif;
 }
@@ -330,6 +332,7 @@ input#freecall_name:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+
 @media only screen and (max-width: 1024px) {
     .thb_text {
         font-size: 17px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,40 @@
     <title>NURSE AT HOME</title>
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <style>
-    .list{
+    .list {
         background: #efefef;
     }
-    .list input{
+
+    .list input {
         accent-color: #ea088b;
     }
-    .list label{
+
+    .list label {
         color: #ea088b;
     }
-    .form-control:focus{
+
+    .form-control:focus {
         box-shadow: none;
         outline: none;
     }
 </style>
+
 <body>
-    <div class="container">
+    <header id="Header"></header>
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="text-center">
@@ -34,70 +49,122 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <p class="mb-0"><b>Name</b></p>
-                <input type="text" name="" id="patient_name" class="form-control">
-            </div>
-            <div class="col-md-6">
-                <p class="mb-0"><b>LOCATION</b></p>
-                <select name="service_location" id="service_location" class="form-control">
-                    <option value="LOCATION" class="form-control">LOCATION</option>
-                    <option value="MUMBAI" class="form-control">MUMBAI</option>
-                    <option value="GUJRAT" class="form-control">GUJRAT</option>
-                    <option value="PUNE" class="form-control">PUNE</option>
-                    <option value="SIKKIM" class="form-control">SIKKIM</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="mb-3">
-                    <p class="mb-0"><b>SERVICES</b></p>
-                    <select name="service" id="service" class="form-control">
-                        <option value="SERVICES_1" class="form-control">SERVICES</option>
-                        <option value="SERVICES_2" class="form-control">SERVICES_1</option>
-                        <option value="SERVICES_3" class="form-control">SERVICES_2</option>
-                        <option value="SERVICES_4" class="form-control">SERVICES_3</option>
-                        <option value="SERVICES_5" class="form-control">SERVICES_4</option>
-                    </select>
-                </div>
-                <form action="">
-                    <div class="list list-1 form-control mb-2">
-                        <span><i class="fas fa-times"></i></span>
-                        <label for="service_1" class="mb-0 pl-4"><b>SERVICES</b>
-                        </label><br>
-                    </div>
-                    <div class="list list-2 form-control mb-2">
-                        <span><i class="fas fa-times"></i></span>
-                        <!-- <input type="checkbox" id="service_1" name="service_1" value=""> -->
-                        <label for="service_1" class="mb-0 pl-4"><b>SERVICES_1</b></label><br>
-                    </div>
-                    <div class="list list-3 form-control mb-2">
-                        <span><i class="fas fa-times"></i></span>
-                        <label for="service_1" class="mb-0 pl-4"><b>SERVICES_2</b></label><br>
-                    </div>
-                    <div class="list list-4 form-control mb-2">
-                        <span><i class="fas fa-times"></i></span>
-                        <label for="service_1" class="mb-0 pl-4"><b>SERVICES_3</b></label><br>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <p class="mb-0"><b>SCHEDULE</b></p>
-                <input type="datetime-local" class="form-control">
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <div class="mt-4 text-center">
-            <button type="button" class="border-light btn font-weight-bold" style="background-color:#a7a5a5;">Confirm</button>
-        </div>
 
-    </div>
+        <div class="row  mb-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <p class="mb-0"><b>Name</b></p>
+                        <input type="text" name="" id="patient_name" class="form-control">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <p class="mb-0"><b>LOCATION</b></p>
+                        <select name="service_location" id="service_location" class="form-control">
+                            <option value="LOCATION" class="form-control">LOCATION</option>
+                            <option value="MUMBAI" class="form-control">MUMBAI</option>
+                            <option value="GUJRAT" class="form-control">GUJRAT</option>
+                            <option value="PUNE" class="form-control">PUNE</option>
+                            <option value="SIKKIM" class="form-control">SIKKIM</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="hidden" name="service_code" id="service_code" />
+                <div class="col-md-12 mb-3">
+                    <div class="mb-2">
+                        <p class="mb-0"><b>SERVICES</b></p>
+                        <select name="service" id="service" class="form-control" id="sukaii_services"
+                            onchange="add_services(this.value)">
+                            <option value="SERVICES_1" class="form-control">SERVICES_1</option>
+                            <option value="SERVICES_2" class="form-control" id="service_1">SERVICES_2</option>
+                            <option value="SERVICES_3" class="form-control" id="service_2">SERVICES_3</option>
+                            <option value="SERVICES_4" class="form-control" id="service_3">SERVICES_4</option>
+                            <option value="SERVICES_5" class="form-control" id="service_4">SERVICES_5</option>
+                        </select>
+                    </div>
+                    <div action="" id="service_form">
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12 mb-3">
+                        <p class="mb-0"><b>SCHEDULE START</b></p>
+                        <input type="datetime-local" class="form-control">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <p class="mb-0"><b>SCHEDULE END</b></p>
+                        <input type="datetime-local" class="form-control">
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <button type="button" class="border-light btn font-weight-bold"
+                        style="background-color:#a7a5a5;">Confirm</button>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+
+        </div>
 </body>
+<script>
+    const mySelectedServices = [];
+    $(function () {
+        $("#Header").load("header.html");
+        //   $("#footer").load("footer.html"); 
+        fetchServices();
+    });
+</script>
+<script>
+    // append services 
+    //  console.log(1);
+
+    function add_services(services) {
+        function findIndexLogic(value, index) {
+            return services === value;
+        }
+        if (mySelectedServices.findIndex(findIndexLogic) == -1) {
+            mySelectedServices.push(services);
+        }
+        updateItemList();
+        $("#service_code").val(mySelectedServices.join(","))
+    }
+
+    function fetchServices() {
+        fetch({
+            url: "getServices",
+            method: "get",
+            contentType: "json"
+        }).then(res => {
+            let options = res.body.map(function (serviceOject) {
+                return `<option value="${serviceOject.id}">${serviceOject.service_name}</option>`
+            });
+            $("#sukaii_services").empty();
+            $("#sukaii_services").append(options.join(""));
+        }).catch(error => {
+            console.log(error);
+        })
+    }
+
+    function updateItemList() {
+        let items = mySelectedServices.map(function (serviceName, index) {
+            return `<div class="list list-1 form-control mb-2" id="list-${index}">
+                            <span><i class="fas fa-times" id="remove_${index}" onclick="remove_service(${index})"></i></span>
+                            <label for="service_1" class="mb-0 pl-4"><b>${serviceName}</b>
+                            </label><br>
+                        </div>`;
+        });
+        let add_here = document.getElementById('service_form');
+        $("#service_form").empty();
+        $("#service_form").append(items.join(""));
+    }
+    function remove_service(id) {
+        document.getElementById(`list-${id}`).remove();
+        mySelectedServices.splice(id, 1);
+        updateItemList();
+        $("#service_code").val(mySelectedServices.join(","))
+    }
+</script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+
 </html>
