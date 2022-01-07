@@ -3,56 +3,81 @@
     background-color: #fff;
     border-color: #80bdff;
     outline: none;
-    box-shadow:none;
+    box-shadow: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-     ul .login_row_list, .menu_list{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ul .login_row_list,
+.menu_list {
     list-style: none;
-     }
-.row{
-    margin-left: 0px; margin-right: 0px;
+    font-family: 'Lato', sans-serif;
 }
-.logo_mobile{
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.logo_mobile {
     width: 50%;
+    position: relative;
+    left: 4%;
 }
-.menu_list{
+
+.menu_list {
     font-weight: 500;
 }
-.menu_list a{
+
+.menu_list a {
     text-decoration: none;
 }
-.tab_mobile_nav{
+
+.tab_mobile_nav {
     font-weight: 600;
     cursor: pointer;
 }
+
 .tab_mobile_nav {
     position: absolute;
     z-index: 100;
     top: 9%;
     right: 0%;
 }
-.tab_mobile_nav li:hover{
-    background-color: #06b5b93b;
-  }
 
-.login_row_list{
+.tab_mobile_nav li:hover {
+    background-color: #06b5b93b;
+}
+
+.login_row_list {
     color: gray;
 }
-.nurses_image{
+
+.nurses_image {
     font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
     top: 40%;
     left: 4%;
 }
-.nurses_image span h1{
+
+.nurses_image span h1 {
     font-size: 4rem;
     line-height: .8;
 }
-.weare_text_details{
-    font-family: 'Lato', sans-serif;
 
+.we_are_doctor_image {
+    height: 100%;
 }
+
+.we_are_for_labtop {
+    font-size: 2.5rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.weare_text_details {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
 .thb_text {
     width: 39%;
     font-size: 1.5rem;
@@ -63,6 +88,7 @@
     word-spacing: 2px;
     letter-spacing: 1px;
 }
+
 .thb_300 {
     font-size: 3.2rem;
     padding: 0.42rem 0.5rem;
@@ -74,6 +100,7 @@
     right: -5%;
     width: 61%;
 }
+
 .thb_300:after {
     content: " ";
     position: absolute;
@@ -85,33 +112,40 @@
     z-index: -1;
     background: #06b5b9;
     transform-origin: bottom left;
-    transform: skew(-20deg,0deg);
+    transform: skew(-20deg, 0deg);
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
 }
-.freecall_div{
+
+.freecall_div {
     border: 1.5px solid black;
     padding: .5rem;
     width: 100% !important;
     margin: auto;
-    border-radius: 1rem;
+    border-radius: 7px;
     position: relative;
     line-height: 1;
     margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
 }
-#freecall_name input[placeholder="NAME"]{
+
+#freecall_name input[placeholder="NAME"] {
     padding-left: 1.5rem;
 }
-#freecall_name, #freecall_location{ 
-    padding-left: 16px;
-font-size: 15px;
-font-weight: 600;
-}
-#freecall_location select{
 
-    -webkit-appearance: none;
-        width: 500px;
+#freecall_name,
+#freecall_location,
+#freecall_service {
+    padding-left: 16px;
+    font-size: 15px;
+    font-weight: 600;
 }
+
+#freecall_location select {
+    -webkit-appearance: none;
+    width: 500px;
+}
+
 .freecall_name_icon {
     border: 1.5px solid black;
     padding: 0.5rem;
@@ -122,19 +156,22 @@ font-weight: 600;
     background: white;
     color: #06b5b9;
 }
+
 .selctor_dow_arrow {
     position: absolute;
     font-size: larger;
     right: 4%;
     top: 31%;
 }
-.call_btn{
+
+.call_btn {
     cursor: pointer;
-    border-radius: 18px;
+    border-radius: 12px;
     background: #ec098d;
     color: whitesmoke;
     font-family: 'Rubik', sans-serif;
 }
+
 .book_now {
     min-width: 357px;
     max-width: 405px;
@@ -147,6 +184,7 @@ font-weight: 600;
     top: -10%;
     left: 38%;
 }
+
 .we_made_it {
     word-spacing: 3px;
     font-family: 'Lato', sans-serif;
@@ -155,12 +193,14 @@ font-weight: 600;
     top: -21%;
     font-weight: 600;
 }
-.three_easy_steps{
+
+.three_easy_steps {
     position: relative;
     text-align: center;
     margin: auto;
 }
-.booknow_text{
+
+.booknow_text {
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -171,10 +211,12 @@ font-weight: 600;
     color: #06b5b9;
     font-weight: 500;
 }
+
 .justin {
     font-size: 1.6rem;
     padding-left: 5.5rem;
 }
+
 .three {
     font-size: 5.5rem;
     line-height: .9;
@@ -183,6 +225,7 @@ font-weight: 600;
     right: 28%;
     color: #ec098d;
 }
+
 .easy_steps {
     font-size: 1.5rem;
     position: absolute;
@@ -193,21 +236,28 @@ font-weight: 600;
     flex-direction: column;
     color: #ec098d;
 }
-.book_3_eassy_step{
+
+.book_3_eassy_step {
     background-size: cover;
     background-image: url("../book_now_in_3_step_bg_image.svg");
-    position:relative;
+    position: relative;
     background-repeat: no-repeat;
     height: 330px;
     margin-bottom: 4rem;
 }
-.f_way, .s_way, .t_way{
+
+.f_way,
+.s_way,
+.t_way {
     list-style: none;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
 }
-.f_way_icon, .s_way_icon, .t_way_icon{
+
+.f_way_icon,
+.s_way_icon,
+.t_way_icon {
     color: #ec098d;
     border: 1px solid black;
     padding: 0.7rem 1.3rem;
@@ -215,27 +265,43 @@ font-weight: 600;
     font-size: 2.2rem;
     background: white;
 }
-.book_services_btn{
+
+.book_services_btn {
     background: #ea088b;
     font-size: 1.3rem;
     font-weight: 600;
     color: whitesmoke;
     border-radius: 10px;
 }
-.Nurse_at_home_text, .ELDERLY_CAREGIVERS_text, .LAB_TEST_AT_HOME_text{
+
+.Nurse_at_home_text,
+.ELDERLY_CAREGIVERS_text,
+.LAB_TEST_AT_HOME_text {
     margin: auto;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     color: darkgray;
     color: #585555;
+    font-family: 'Lato', sans-serif;
 }
-.ELDERLY_CAREGIVERS_text{
+
+.book_btn {
+    font-family: 'Lato', sans-serif;
+}
+
+.ELDERLY_CAREGIVERS_text {
     width: 100%;
 }
-.f_s_c_heading, .f_d_c_heading, .f_sp_c_heading{
+
+.f_s_c_heading,
+.f_d_c_heading,
+.f_sp_c_heading {
     font-family: 'Rubik', sans-serif;
 }
-.f_s_c_detail, .f_d_c_detail, .f_sp_c_detail{
+
+.f_s_c_detail,
+.f_d_c_detail,
+.f_sp_c_detail {
     font-family: 'Lato', sans-serif;
     font-size: 17px;
     width: 82%;
@@ -243,11 +309,14 @@ font-weight: 600;
     text-align: justify;
     color: gray;
 }
-.why_us, .we_are_commited_to{
+
+.why_us,
+.we_are_commited_to {
     font-size: 2.5rem;
     /* color: #ea088b; */
     font-family: 'Rubik', sans-serif;
 }
+
 .s_a_h {
     border: 2px solid;
     text-align: center;
@@ -256,16 +325,20 @@ font-weight: 600;
     width: 95%;
     left: 5%;
 }
-.s_a_h h3, .footer h5{
+
+.s_a_h h3,
+.footer h5 {
     font-family: 'Rubik', sans-serif;
 }
+
 .s_a_h_img img {
     position: absolute;
     top: -38%;
     right: 29%;
     width: 128px;
 }
-.s_a_h_detail{
+
+.s_a_h_detail {
     font-family: 'Lato', sans-serif;
     width: 94%;
     min-height: 89px;
@@ -273,150 +346,220 @@ font-weight: 600;
     padding-bottom: 1rem;
     text-align: justify;
 }
-.about_us_footer{
+
+.about_us_footer {
+    font-family: 'Lato', sans-serif;
     color: whitesmoke;
     text-align: justify;
 }
-.footer h5{
+
+.footer h5 {
     padding-top: 1.5rem;
     color: #585555;
 }
-.our_services_list, .quik_link_list{
+
+.our_services_list,
+.quik_link_list {
     color: #ea088b;
 }
-.our_services_list span, .quik_link_list span, .connect_us_add, .connect_us_email, .connect_us_call{
+
+.connect_us_div,
+.our_services_list,
+.quik_link_list {
+    font-family: 'Lato', sans-serif;
+}
+
+.our_services_list span,
+.quik_link_list span,
+.connect_us_add,
+.connect_us_email,
+.connect_us_call {
     color: whitesmoke;
 }
-.copy_write{
+
+.copy_write {
     width: 100%;
     font-weight: 600;
     color: #56524c;
 }
-.bnp{
+
+.bnp {
     background: #e90c8c;
     color: whitesmoke;
     font-size: 1.2rem;
     font-weight: 500;
 }
-.mobole_no{
+
+.mobole_no {
     display: flex;
     align-items: center;
     font-size: 25px;
 }
+
 .book_with_mob {
     display: flex;
     align-items: center;
     padding: 1rem 0rem;
     background: #00b4b8;
 }
-.nearse_image{
+
+.nearse_image {
     text-align: center;
     margin-bottom: 3rem;
 }
-.olders_image{
+
+.olders_image {
     align-items: center;
     margin-bottom: 3rem;
 }
-.lab_test{
+
+.lab_test {
     margin-bottom: 3rem;
 }
+
 .service_at_home_img {
     width: 30%;
     text-align: center;
 }
-.saht{
+
+.saht {
     border-bottom: 1px solid #00b4b8;
     padding-bottom: 0.15rem;
 }
+
 input#freecall_name:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+
+.login_btn button {
+    padding: .15rem .5rem;
+    color: black;
+    background: #e90c8c;
+    font-weight: 500;
+}
+
+.top a span {
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    padding: 8px 15px;
+    background: #16b6b8;
+    color: #ec2b9a;
+    font-size: larger;
+    box-shadow: 0px 0px 6px 1px #16b6b899;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+}
+
 @media only screen and (min-width: 1350px) {
     .nurses_image span h1 {
         font-size: 5rem !important;
     }
 }
+
 @media only screen and (max-width: 1220px) {
     .nurses_image span h1 {
         font-size: 3.5rem;
     }
-    .book_now{
-        left:34%;
+    .book_now {
+        left: 34%;
+    }
+    .we_made_it {
+        left: 40%;
     }
 }
-@media only screen and (max-width: 1024px){
+
+@media only screen and (max-width: 1024px) {
     .nurses_image span h1 {
         font-size: 3rem;
     }
     .nurses_image {
         font-size: 2rem;
     }
-    .book_now{
-        left:31%;
+    .book_now {
+        left: 31%;
+    }
+    .we_made_it {
+        left: 36.5%;
+    }
+    .thb_text {
+        font-size: 17px;
     }
 }
-@media only screen and (max-width: 900px){
+
+@media only screen and (max-width: 900px) {
     .nurses_image span h1 {
         font-size: 2.5rem;
     }
     .nurses_image {
         font-size: 1.5rem;
     }
-    .book_now{
-        left:28%;
+    .book_now {
+        left: 28%;
+    }
+    .we_made_it {
+        left: 34.5%;
     }
 }
-@media only screen and (max-width: 1024px) {
-    .thb_text {
-        font-size: 17px;
-    }
-}
-@media only screen and (max-width:768px){
-    .nurse-at-home_div{
+
+@media only screen and (max-width:768px) {
+    .nurse-at-home_div {
         border-right: none !important;
     }
-    .logo_mobile{
+    .logo_mobile {
         width: 75%;
     }
-    .book_now{
-        left:25%;
+    .book_now {
+        left: 25%;
     }
 }
-@media only screen and (max-width:688px){
-    .book_now{
-        left:21%;
+
+@media only screen and (max-width:688px) {
+    .book_now {
+        left: 21%;
+    }
+    .we_made_it {
+        left: 29.5%;
     }
 }
-@media only screen and (max-width:600px){
-    .book_now{
-        left:17%;
+
+@media only screen and (max-width:600px) {
+    .book_now {
+        left: 17%;
     }
 }
-@media only screen and (max-width:550px){
-    .book_now{
-        left:13%;
+
+@media only screen and (max-width:550px) {
+    .book_now {
+        left: 13%;
+    }
+    .we_made_it {
+        left: 23.5%;
     }
 }
-@media only screen and (max-width:500px){
-    .book_now{
-        left:10%;
+
+@media only screen and (max-width:500px) {
+    .book_now {
+        left: 10%;
     }
 }
+
 @media only screen and (max-width: 450px) {
-     .we_are_doctor_image, .we_are_div_laptop{ 
+    .we_are_doctor_image,
+    .we_are_div_laptop {
         display: none !important;
-    } 
-    .carousel_1_image h1{
+    }
+    .carousel_1_image h1 {
         font-size: 25px;
     }
-    .carousel_1_image{
+    .carousel_1_image {
         font-size: 1rem;
     }
     .thb300 {
         width: 100% !important;
     }
-    .t_way{
+    .t_way {
         padding-left: 0%;
     }
     .thb_300 {
@@ -434,76 +577,76 @@ input#freecall_name:focus {
         left: 3%;
     }
     .we_made_it {
-        left: 21%;
+        left: 17%;
         top: -22%;
     }
-    .booknow_text{
+    .booknow_text {
         font-size: 2.1rem;
     }
-    .three{
+    .three {
         font-size: 5rem;
         right: 27%;
     }
-    .easy_steps{
+    .easy_steps {
         right: 3%;
         top: 27%;
     }
-    .justin{
+    .justin {
         padding-left: 4rem;
     }
-    .nearse_image{
+    .nearse_image {
         text-align: unset;
         width: 41%;
         margin-bottom: 0rem;
     }
-    .nearse_image img{
+    .nearse_image img {
         width: 100% !important;
         margin-bottom: 1rem;
     }
-    .nurse-at-home_div{
+    .nurse-at-home_div {
         display: flex;
         align-items: center;
         border-right: none !important;
     }
-    .Nurse_at_home_text{
+    .Nurse_at_home_text {
         width: 100%;
         font-size: 1.5rem;
         max-width: unset;
     }
-    .olders_image{
+    .olders_image {
         text-align: unset;
         width: 40%;
         margin-bottom: 0rem;
     }
-    .olders_image img{
+    .olders_image img {
         width: 100%;
     }
     .ELDERLY_CAREGIVERS_text {
         width: 100%;
         font-size: 1.5rem;
     }
-    .olders_image_div{
+    .olders_image_div {
         display: flex;
         align-items: center;
     }
-    .lab_test{
+    .lab_test {
         text-align: unset;
         width: 41%;
         margin-bottom: 0rem;
     }
-    .lab_test img{
+    .lab_test img {
         width: 100% !important;
     }
-    .lab_test_div{
+    .lab_test_div {
         display: flex;
         align-items: center;
     }
-    .LAB_TEST_AT_HOME_text{
+    .LAB_TEST_AT_HOME_text {
         max-width: unset;
         width: 100%;
         font-size: 1.5rem;
     }
-    .lab_test_div{
+    .lab_test_div {
         display: flex;
         align-items: center;
     }
@@ -513,18 +656,18 @@ input#freecall_name:focus {
     .we_are_commited_to {
         font-size: 2rem;
     }
-    .recommeded_to_desktop{
+    .recommeded_to_desktop {
         display: none;
     }
-    .why_us{
+    .why_us {
         font-size: 2rem;
     }
     .nurses_image span h1 {
         font-size: 4rem;
     }
-    .book_with_mob{
+    .book_with_mob {
         position: sticky;
         bottom: 0%;
         left: 0%;
     }
-  }
+}
