@@ -1,0 +1,34 @@
+.search_btn select {
+    appearance: none;
+    background-image: none;
+}
+
+.search_bar {
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px 1px lightgrey;
+    outline-color: transparent !important;
+    outline-style: none !important;
+}
+
+.search_area {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.search_area i {
+    font-size: 24px;
+    color: grey;
+    cursor: pointer;
+}
+
+.search_area input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.search_area i:hover {
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}

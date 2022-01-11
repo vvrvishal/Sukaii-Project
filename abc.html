@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukaii-Login</title>
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="./css/login_page_style.css"> -->
     <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <style>
@@ -15,94 +16,117 @@
             font-family: 'Lato', sans-serif;
         }
         
-        .register a {
-            color: #ea088b;
-            ;
+        .full_container {
+            background-image: url(./images/login_image_2.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-attachment */
         }
         
-        .submit_btn button {
-            background-color: #ea088b;
+        .login_form {
+            width: 30%;
+            float: right;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1%;
+            position: absolute;
+            top: 24%;
+            right: 10%;
+            min-width: 430px;
         }
         
-        .register_btn button {
-            background-color: #949090;
+        .btn-register_in {
+            background: #6bdadc !important;
         }
         
-        .login_register {
-            width: 65%;
-            margin: auto;
+        .login_link p a {
+            color: #ed1a95;
+            text-decoration: none;
         }
         
-        .address_btn {
-            margin-top: 0.4rem;
-            border: 1px solid black !important;
-            outline: none !important;
+        .btn-register_in h6 {
+            color: #ed1a95 !important;
+            font-weight: 600;
         }
-        /* .address_btn button {
-			
-		} */
+        /* header  */
+        
+        @media(max-width:800px) {
+            .login_form {
+                right: 3%;
+                min-width: 400px;
+            }
+        }
+        
+        @media(max-width:450px) {
+            .login_form {
+                top: 20%;
+                padding: 3%;
+                min-width: 400px;
+            }
+        }
+        
+        @media(max-width:380px) {
+            .login_form {
+                top: 20%;
+                padding: 3%;
+                min-width: 300px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header id="Header"></header>
-    <div class="container-fluid px-0">
-
-        <div class="row">
-            <div class="col-md-7 px-0">
-                <img src="./images/registration_img.jpg" width="100%" height="100%" alt="">
+    <div class="container-fluid full_container">
+        <div class="login_form ">
+            <div class="logo text-center mb-1">
+                <img src="./images/sukaii_logo.PNG" alt="" width="22%" class="">
             </div>
-            <div class="col-md-5" style="background-color:#ebf4fa;">
-                <div class="login_register">
-                    <h1 class="mb-4 mt-5 text-center" style="font-family: 'Rubik', sans-serif !important;">REGISTER</h1>
-                    <form action="">
-                        <div class="name mb-3">
-                            <p class="mb-0"><b>NAME</b></p>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="email mb-3">
-                            <p class="mb-0"><b>EMAIL</b></p>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="password mb-3">
-                            <p class="mb-0"><b>PASSWORD</b></p>
-                            <input type="password" class="form-control">
-                            <span></span>
-                        </div>
-                        <div class="contact mb-3">
-                            <p class="mb-0"><b>CONTACT</b></p>
-                            <input type="number" class="form-control">
-                        </div>
-                        <div class="address mb-3">
-                            <p class="mb-0"><b>ADDRESS</b> <span><button type="button" class="btn address_btn mb-1 ml-2" onclick="load_data()">Address <span><i class="fas fa-map-marker-alt pl-2"></i></span></button>
-                                </span>
-                            </p>
-                            <textarea name="address1" id="address1" class="form-control" cols="10" rows="2"></textarea>
-                            <div class="">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="register">
-                        <div class="register_btn my-4 text-center">
-                            <button type="button" class="btn text-light"><b>REGISTER</b></button>
-                        </div>
-                    </div>
+            <h4 class="text-center mb-4" style="font-family: 'Rubik', sans-serif !important; font-weight: 600;">REGISTRATION</h4>
+            <div class="username">
+                <label for="" class="username_lable mb-1"><h6 class="mb-0 pl-1"><b>Name</b></h6></label>
+                <input type="text" class="user_name form-control mb-2">
+            </div>
+            <div class="email">
+                <label for="" class="email_lable mb-1"><h6 class="mb-0 pl-1"><b>Email</b></h6></label>
+                <!-- <p class="mb-0"><b>EMAIL</b></p> -->
+                <input type="email" class="form-control email mb-2">
+            </div>
+            <div class="password">
+                <label for="" class="password_lable mb-1"><h6 class="mb-0 pl-1"><b>Password</b></h6></label>
+                <input type="text" class="password_input form-control mb-2">
+            </div>
+            <div class="contact ">
+                <label for="" class="contact_lable mb-1"><h6 class="mb-0 pl-1"><b>Contact</b></h6></label>
+                <!-- <p class="mb-0"><b>CONTACT</b></p> -->
+                <input type="number" class="form-control contact mb-2">
+            </div>
+            <div class="address mb-3">
+                <label class="mb-0"><b>ADDRESS</b> <span><button type="button" class="btn address_btn mb-1 ml-2" onclick="load_data()">Address <span><i class="fas fa-map-marker-alt pl-2"></i></span></button>
+                    </span>
+                </label>
+                <textarea name="address1" id="address1" class="form-control" cols="10" rows="1"></textarea>
+                <div class="">
                 </div>
             </div>
-            <!-- <button type="button" onclick="load_data()" > hello</button>
-                <p  id="getlocation"></p> -->
+            <button type="button" class="btn btn-register_in form-control mb-2"><h6 class="mb-0">Register</h6></button>
+            <!-- <h6 class="float-right">Forget Password</h6> -->
+            <div class="login_link">
+                <p>Already Registered <a href="./new_login_page.html"><b>LOGIN</b></a> here</p>
+                <!-- <div class="register_btn my-4 text-center">
+                    <button type="button" class="btn text-light"><b>REGISTER</b></button>
+                </div> -->
+            </div>
         </div>
-    </div>
-
 
     </div>
     <div id="footer"></div>
-    <div id="location_data"></div>
-    <div id="map"></div>
+    <!-- <div id="location_data"></div>
+    <div id="map"></div> -->
 
-    <input type="hidden" id="latlng">
-
-    </script>
 </body>
 <script>
     $(function() {
@@ -251,6 +275,5 @@
         }
     }
 </script>
-
 
 </html>

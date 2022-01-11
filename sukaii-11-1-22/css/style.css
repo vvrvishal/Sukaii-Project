@@ -331,11 +331,14 @@ ul .login_row_list,
     font-family: 'Rubik', sans-serif;
 }
 
+.s_a_h_img {
+    text-align: left;
+}
+
 .s_a_h_img img {
-    position: absolute;
-    top: -38%;
-    right: 29%;
-    width: 128px;
+    width: 74px;
+    padding-left: 1rem;
+    padding-top: .5rem;
 }
 
 .s_a_h_detail {

@@ -17,7 +17,7 @@
         }
         
         .full_container {
-            background-image: url(./images/login_image_2.jpg);
+            background-image: url(./images/regis-removebg-preview.png);
             width: 100%;
             height: 100vh;
             background-size: cover;
@@ -31,25 +31,37 @@
             float: right;
             background: #ffffff;
             border-radius: 8px;
-            padding: 1%;
+            padding: 1.5% 1%;
             position: absolute;
-            top: 28%;
-            right: 10%;
+            top: 49%;
+            left: 10%;
             min-width: 430px;
+            box-shadow: 0px 0px 40px 2px #e4e3e3;
+        }
+        
+        .login,
+        .registration {
+            border-radius: 10px;
+        }
+        
+        .login:focus,
+        .registration:focus {
+            border: 1px solid red;
         }
         
         .btn-sign_in {
             background: #6bdadc !important;
         }
         
-        .register_link p a {
-            color: #ed1a95;
-            text-decoration: none;
+        .login span,
+        .registration span {
+            font-size: xx-large;
+            color: #12b6b9;
         }
         
-        .btn-sign_in h6 {
-            color: #ed1a95;
-            font-weight: 600;
+        .login h3,
+        .registration h3 {
+            color: #ec098d;
         }
         /* header  */
         
@@ -82,28 +94,40 @@
     <header id="Header"></header>
     <div class="container-fluid full_container">
         <div class="login_form ">
-            <div class="logo text-center mb-1">
-                <img src="./images/sukaii_logo.PNG" alt="" width="22%" class="">
+            <div class="logo text-center mb-5">
+                <img src="./images/sukaii_logo.PNG" alt="" width="30%" class="">
             </div>
-            <h4 class="text-center mb-2" style="font-family: 'Rubik', sans-serif !important; font-weight: 600;">LOGIN</h4>
-            <div class="username">
+            <!-- <h4 class="text-center mb-4" style="font-family: 'Rubik', sans-serif !important; font-weight: 600;">LOGIN</h4> -->
+            <!-- <div class="username">
                 <label for="" class="username_lable mb-1"><h6 class="mb-1 pl-1">Username</h6></label>
                 <input type="text" class="user_name form-control mb-2">
             </div>
             <div class="password">
                 <label for="" class="password_lable mb-1"><h6 class="mb-1 pl-1">Password</h6></label>
                 <input type="text" class="password_input form-control mb-4">
-            </div>
-            <button type="button" class="btn btn-sign_in form-control mb-2"><h6 class="mb-0">Sign In</h6></button>
-            <!-- <h6 class="float-right">Forget Password</h6> -->
-            <div class="register_link">
-                <p>Don't have an account? <a href="./abc.html"><b>REGISTER NOW !</b></a></p>
-                <!-- <div class="register_btn my-4 text-center">
-                    <button type="button" class="btn text-light"><b>REGISTER</b></button>
-                </div> -->
+            </div> -->
+            <!-- <button type="button" class="btn btn-sign_in form-control mb-2"><h6 class="mb-0">Sign In</h6></button>
+            <h6 class="float-right">Forget Password</h6>
+            <div class="register">
+                <p>Don't have an account? <a href="#"><b>REGISTER NOW !</b></a></p>
+            </div> -->
+            <div class="d-flex mb-3">
+                <a href="./new_login_page.html" class="w-50" style="text-decoration: none;">
+                    <div class="border pt-2 pl-4 login ml-2">
+                        <span><i class="fas fa-tablets mb-4"></i></span>
+                        <h3 class="font-weight-bold h4">Login</h3>
+                    </div>
+                </a>
+                <a href="./abc.html" class=" w-50" style="text-decoration: none;">
+                    <div class="border pt-2 pl-4 registration ml-2">
+                        <span><i class="fas fa-pills mb-4"></i></span>
+                        <h3 class="font-weight-bold h4">Registeration</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
+    <!-- <i class="fas fa-tablets"></i> -->
     <div id="footer"></div>
 
 </body>

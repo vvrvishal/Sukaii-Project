@@ -1,0 +1,153 @@
+.search_btn select {
+    appearance: none !important;
+}
+
+.search_bar {
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px 1px lightgrey;
+    outline-color: transparent !important;
+    outline-style: none !important;
+}
+
+.search_area {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: -1px 1px 4px 0px lightgrey;
+}
+
+.search_area i {
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+    right: 15%;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}
+
+.search_area input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.search_area i:hover {
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}
+
+.location_selector {
+    width: 27% !important;
+    appearance: none !important;
+    border-radius: 0% !important;
+    border: none !important;
+    border-right: 1px solid lightgray !important;
+}
+
+.test_selector {
+    border: none !important;
+}
+
+.test_packege {
+    border: 1px solid;
+    border-radius: 24px;
+}
+
+.card {
+    margin: auto;
+    width: 20rem !important;
+    border-radius: 18px !important;
+    box-shadow: 0px 0px 6px 0px lightgrey !important;
+}
+
+.card a {
+    box-shadow: 1px 1px 5px 1px lightgrey !important;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px 1px lightgrey !important;
+}
+
+.card_top_image {
+    width: 20% !important;
+    position: absolute;
+    right: 4%;
+    top: 3%;
+}
+
+.package_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.actual_price {
+    color: gray;
+}
+
+.indicators {
+    border: 1px solid;
+    padding: 6px 12px;
+    border-radius: 50%;
+    font-weight: 900;
+    background: lightgray;
+    color: black;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #ec098d !important;
+}
+
+.symptom_img img {
+    border-radius: 80px;
+    /* text-align: center; */
+}
+
+.symtoms {
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 0px lightgray;
+    padding: 5px 0px;
+}
+
+.symtoms:hover {
+    box-shadow: 0px 0px 13px 0px lightgray;
+}
+
+.toster {
+    position: relative;
+    left: 85%;
+}
+
+.toast {
+    box-shadow: 0px 0px 7px 0px lightgrey;
+}
+
+.controler {
+    position: absolute;
+    bottom: -21%;
+    right: 0%;
+}
+
+.carousel_item a {
+    color: black !important;
+}
+
+.Prescription,
+.age_diffrence {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.add_to_cart button {
+    background-color: #11b6b9;
+    color: white !important;
+    border: 1px solid #11b6b9;
+}
+
+.add_to_cart button:focus {
+    /* background-color: #11b6b9; */
+    border: 1px solid #11b6b9;
+    color: black !important;
+}

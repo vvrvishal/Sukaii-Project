@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages details</title>
+    <link rel="stylesheet" href="./css/labtest.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+    <header id="Header"></header>
+    <div class="container">
+        <div class="row lab_test_package_details">
+            <div class="col-md-12">
+                <h2>About a Package</h2>
+                <h3> Full Body Health Checkup</h3>
+            </div>
+        </div>
+        <div class="align-items-center row mb-3">
+            <div class="col-md-10">
+                <div class="border" style="border-radius: 10px;">
+                    <div class="border-bottom p-1 text-center">
+                        <span class="px-2"><i class="fas fa-home"></i> Home Sample Collection </span>
+                        <span class="px-2 Prescription">Prescription Not Required</span>
+                        <span class="px-2">Reports Available in 24 - 48 hrs</span>
+                    </div>
+                    <div class="text-center p-1">
+                        <span class="px-2"><b>Unisex</b></span>
+                        <span class="px-2 age_diffrence"><b>15 yrs - 99 yrs </b></span>
+                        <span class="px-2"><b>No Preparation</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="add_to_cart">
+                    <button class="btn form-control"><b>Add To Cart</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(function() {
+        $("#Header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+
+</html>
