@@ -11,9 +11,8 @@
 }
 
 .search_area {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    box-shadow: -1px 1px 4px 0px lightgrey;
+    border-radius: 10px;
+    box-shadow: -1px 1px 9px 0px lightgrey;
 }
 
 .search_area i {
@@ -43,10 +42,14 @@
     border-radius: 0% !important;
     border: none !important;
     border-right: 1px solid lightgray !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
 }
 
 .test_selector {
     border: none !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
 }
 
 .test_packege {
@@ -151,3 +154,29 @@
     border: 1px solid #11b6b9;
     color: black !important;
 }
+
+.about_test {
+    /* background-image: url("../images/prasesh-shiwakoti-lomash-moHiHqdmUYY-unsplash.jpg"); */
+    height: 100%;
+}
+
+.body_function {
+    box-shadow: 0px 0px 7px 0px lightgrey;
+    border-radius: 10px;
+}
+
+.Prerequisites_select {
+    box-shadow: 0px 0px 7px 0px lightgray;
+}
+
+.icon_rotet {
+    transform: rotate(180deg);
+    transition-timing-function: ease-in;
+    transition-duration: .1s;
+}
+
+
+/* 
+.carousel-indicators .active {
+    background: #ec098d !important;
+} */

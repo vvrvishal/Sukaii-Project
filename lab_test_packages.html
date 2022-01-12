@@ -16,22 +16,26 @@
 
 <body>
     <header id="Header"></header>
-    <div class="container">
-        <div class="row lab_test_package_details">
-            <div class="col-md-12">
-                <h2>About a Package</h2>
+    <div class="container-fluid about_test py-5" style="background: #f4f4f4;  background-image: linear-gradient(45deg, #11b6b9, #ec098d);">
+        <div class="row lab_test_package_details mb-2">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <!-- <h2>About a Package</h2> -->
                 <h3> Full Body Health Checkup</h3>
             </div>
+            <div class="col-md-1"></div>
+
         </div>
         <div class="align-items-center row mb-3">
-            <div class="col-md-10">
-                <div class="border" style="border-radius: 10px;">
-                    <div class="border-bottom p-1 text-center">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <div class="border" style="border-radius: 10px; background: #11b6b985;">
+                    <div class="border-bottom p-2 text-center">
                         <span class="px-2"><i class="fas fa-home"></i> Home Sample Collection </span>
                         <span class="px-2 Prescription">Prescription Not Required</span>
                         <span class="px-2">Reports Available in 24 - 48 hrs</span>
                     </div>
-                    <div class="text-center p-1">
+                    <div class="text-center p-2">
                         <span class="px-2"><b>Unisex</b></span>
                         <span class="px-2 age_diffrence"><b>15 yrs - 99 yrs </b></span>
                         <span class="px-2"><b>No Preparation</b></span>
@@ -43,8 +47,130 @@
                     <button class="btn form-control"><b>Add To Cart</b></button>
                 </div>
             </div>
+            <div class="col-md-1"></div>
         </div>
     </div>
+    <div class="container pt-4">
+        <h5>About the Package</h5>
+        <div class="row Prerequisites">
+            <div class="col-md-4 mb-3">
+                <div class="body_function border mt-4 p-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0"><b id="body_function">Body Functions</b></p>
+                        <span class="pl-3"><i class="fas fa-chevron-down" id="body_functions"></i></span>
+                    </div>
+                    <ul class="list-unstyled px-3 mb-0" style="display: none;" id="body_functions_list">
+                        <li class="border-bottom" onclick="select_patient_detail('Heart')">Heart</li>
+                        <li class="border-bottom" onclick="select_patient_detail('Liver')">Liver</li>
+                        <li onclick="select_patient_detail('Kidney')">Kidney</li>
+                    </ul>
+                </div>
+                <!-- <div class="mb-2">
+                    <p class="mb-1"><b>Body Functions</b></p>
+                    <select name="service" id="service" class="form-control Prerequisites_select" id="sukaii_services" onchange="add_services(this.value)">
+                            <option value="Heart" class="form-control">Heart</option>
+                            <option value="Liver" class="form-control" id="service_1">Liver</option>
+                            <option value="Kidney" class="form-control" id="service_2">Kidney</option>
+                        </select>
+                </div> -->
+                <!-- <div action="" id="service_form">
+
+                </div> -->
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="mb-2">
+                    <p class="mb-1"><b>Diseases Covered</b></p>
+                    <select name="service" id="service" class="form-control Prerequisites_select" id="sukaii_services" onchange="add_services(this.value)">
+                            <option value="Liver Diseases" class="form-control">Liver Diseases</option>
+                            <option value="Coronary Risk/Heart Diseases" class="form-control" id="service_1">Coronary Risk/Heart Diseases</option>
+                            <option value="Diabetes " class="form-control" id="service_2">Diabetes</option>
+                            <option value="Kidney Disease" class="form-control" id="service_3">Kidney Disease</option>
+                            <option value="Anemia" class="form-control" id="service_4">Anemia</option>
+                        </select>
+                </div>
+                <!-- <div action="" id="service_form">
+
+                </div> -->
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="mb-2">
+                    <p class="mb-1"><b>Life Style</b></p>
+                    <select name="service" id="service" class="form-control Prerequisites_select" id="sukaii_services" onchange="add_services(this.value)">
+                            <option value="Smokers" class="form-control">Smokers</option>
+                            <option value="Alcoholic" class="form-control" id="service_1">Alcoholic</option>
+                            <option value="Inactive" class="form-control" id="service_2">Inactive</option>
+                            <option value="Obesity" class="form-control" id="service_3">Obesity</option>
+                            <!-- <option value="SERVICES_5" class="form-control" id="service_4">SERVICES_5</option> -->
+                        </select>
+                </div>
+                <!-- <div action="" id="service_form">
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container pt-4">
+        <h5>60 Lab Tests in this package</h5>
+        <div class="row">
+            <!-- <div class="col-md-12">
+               
+            </div> -->
+            <div class="col-md-6 mb-3">
+                <div class="body_function border mt-4 p-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0"><b>Complete Blood Count (CBC) - EDTA Whole Blood - 25 Tests</b></p>
+                        <span class="pl-3"><i class="fas fa-chevron-down" id="cbc_functions"></i></span>
+                    </div>
+                    <ul class="list-unstyled px-3 mb-0" style="display: none;" id="cbc_list">
+                        <li class="border-bottom">Heart</li>
+                        <li class="border-bottom">Liver</li>
+                        <li>Kidney</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="body_function border mt-4 p-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0"><b>Complete Blood Count (CBC) - EDTA Whole Blood - 25 Tests</b></p>
+                        <span class="pl-3"><i class="fas fa-chevron-down" id="cbc_functions"></i></span>
+                    </div>
+                    <ul class="list-unstyled px-3 mb-0" style="display: none;" id="cbc_list">
+                        <li class="border-bottom">Heart</li>
+                        <li class="border-bottom">Liver</li>
+                        <li>Kidney</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="body_function border mt-4 p-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0"><b>Complete Blood Count (CBC) - EDTA Whole Blood - 25 Tests</b></p>
+                        <span class="pl-3"><i class="fas fa-chevron-down" id="cbc_functions"></i></span>
+                    </div>
+                    <ul class="list-unstyled px-3 mb-0" style="display: none;" id="cbc_list">
+                        <li class="border-bottom">Heart</li>
+                        <li class="border-bottom">Liver</li>
+                        <li>Kidney</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="body_function border mt-4 p-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="mb-0"><b>Complete Blood Count (CBC) - EDTA Whole Blood - 25 Tests</b></p>
+                        <span class="pl-3"><i class="fas fa-chevron-down" id="cbc_functions"></i></span>
+                    </div>
+                    <ul class="list-unstyled px-3 mb-0" style="display: none;" id="cbc_list">
+                        <li class="border-bottom">Heart</li>
+                        <li class="border-bottom">Liver</li>
+                        <li>Kidney</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div id="footer"></div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -53,6 +179,17 @@
         $("#Header").load("header.html");
         $("#footer").load("footer.html");
     });
+
+    $("#body_functions,#cbc_functions").click(function() {
+        $(this).toggleClass('icon_rotet');
+        $("#body_functions_list,#cbc_list").toggle('slow');
+    });
+
+    function select_patient_detail(detail) {
+        console.log(detail);
+        let x = document.getElementById('body_function');
+        x.append(` ( ${detail} )`);
+    }
 </script>
 
 </html>
