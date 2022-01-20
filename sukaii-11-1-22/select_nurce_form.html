@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-md-12 mb-3">
                         <p class="mb-0"><b>LOCATION</b></p>
-                        <select name="service_location" id="service_location" class="form-control">
+                        <select name="service_location" id="service_location" class="form-control" required>
                             <option value="LOCATION" class="form-control">LOCATION</option>
                             <option value="MUMBAI" class="form-control">MUMBAI</option>
                             <option value="GUJRAT" class="form-control">GUJRAT</option>
@@ -69,17 +69,17 @@
                         </select>
                     </div>
                 </div>
-                <input type="hidden" name="service_code" id="service_code" />
+                <input type="hidden" name="service_code" id="service_code" required/>
                 <div class="col-md-12 mb-3">
                     <div class="mb-2">
                         <p class="mb-0"><b>SERVICES</b></p>
                         <select name="service" id="service" class="form-control" id="sukaii_services"
                             onchange="add_services(this.value)">
-                            <option value="SERVICES_1" class="form-control">SERVICES_1</option>
-                            <option value="SERVICES_2" class="form-control" id="service_1">SERVICES_2</option>
-                            <option value="SERVICES_3" class="form-control" id="service_2">SERVICES_3</option>
-                            <option value="SERVICES_4" class="form-control" id="service_3">SERVICES_4</option>
-                            <option value="SERVICES_5" class="form-control" id="service_4">SERVICES_5</option>
+                            <option value="SERVICES_1" class="form-control">SERVICES_NAME_1</option>
+                            <option value="SERVICES_2" class="form-control" id="service_1">SERVICES_NAME_2</option>
+                            <option value="SERVICES_3" class="form-control" id="service_2">SERVICES_NAME_3</option>
+                            <option value="SERVICES_4" class="form-control" id="service_3">SERVICES_NAME_4</option>
+                            <option value="SERVICES_5" class="form-control" id="service_4">SERVICES_NAME_5</option>
                         </select>
                     </div>
                     <div action="" id="service_form">
@@ -92,14 +92,13 @@
                         <p class="mb-0"><b>SCHEDULE START</b></p>
                         <input type="datetime-local" class="form-control">
                     </div>
-                    <div class="col-md-12 mb-3">
-                        <p class="mb-0"><b>SCHEDULE END</b></p>
-                        <input type="datetime-local" class="form-control">
-                    </div>
+                    
                 </div>
                 <div class="mt-4 text-center">
-                    <button type="button" class="border-light btn font-weight-bold"
-                        style="background-color:#a7a5a5;">Confirm</button>
+                    <a href="./payment_get_way.html">
+                        <button type="button" class="border-light btn font-weight-bold"
+                        style="background-color:#00b4b8;;">Confirm</button>
+                    </a>
                 </div>
             </div>
             <div class="col-md-3"></div>
